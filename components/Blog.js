@@ -1,0 +1,55 @@
+"use Client";
+export default function Blog(){
+    return(
+        <div className="min-h-screen bg-gray-100">
+        <div className='flex flex-row justify-center items-center  text-2xl text-yellow-900 p-5'>----- News & Blog -----</div>
+    <div className='flex flex-row justify-center items-center text-4xl font-Arial p-1'>Our Latest News & Blog</div>
+    <div className='flex flex-row justify-center items-center  md:text-lg p-10 mx-20'>
+        <div className="flex flex-row">
+        <div className="flex flex-col mx-10">
+            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F1.jpg&w=1920&q=75" className='h-[500px] w-[700px] rounded-[20px]'/>
+         <div className=" md:h-[250px] md:w-[560px] relative flex flex-row px-2  mt-[-40px]  mx-[50px]  bg-white  ">
+                      <div className=" md:h-[90px] md:w-[90px] relative flex flex-row px-2 ml-[400px] mx-[50px] mt-[-50px] bg-[#d2a679]  ">       
+                         <div className="flex flex-col">
+                        <div className='text-4xl text-white font-bold mx-[5px] p-3 '>24</div>
+                        <div className='text-2xl text-white mx-[12px] '>NOV</div>
+        </div>
+        </div>  
+        <div className="flex flex-col  absolute left-0 p-10 ">
+             <div className='text-lg text-gray-600  mt-2 mx-2'>By Md SohagBurger * Food</div>
+        
+            <div className='text-3xl text-black font-marcallus font-semibold p-2  '>Picked up a Brussels burger Sprouts with ham</div>
+            <div className='text-2xl text-amber-700  mt-2 p-1'>READ MORE </div>
+        
+          
+       </div>
+      </div>
+           </div>
+
+            <div className="flex flex-col mx-10">
+            
+            <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F2.jpg&w=1920&q=75" className='h-[500px] w-[700px] rounded-[20px]'/>
+         <div className=" md:h-[250px] md:w-[560px] relative flex flex-row px-2 mx-[50px] mt-[-40px]    bg-white  ">
+                      <div className=" md:h-[90px] md:w-[90px] relative flex flex-row px-2 ml-[400px] mx-[50px] mt-[-50px] bg-[#d2a679]  ">
+                        
+                        <div className="flex flex-col"><div className='text-4xl text-white font-bold mx-[5px] p-3 '>18</div>
+                                   <div className='text-2xl text-white mx-[12px] '>NOV</div>
+                                   </div>
+        </div>
+         <div className="flex flex-col  absolute left-0 p-10 ">
+             <div className='text-lg text-gray-600  mt-2 mx-2'>By Md SohagBurger * Food</div>
+        
+            <div className='text-3xl text-black font-marcallus font-semibold p-2  '>This prefabricated passive house is highly sustainable</div>
+            <div className='text-2xl text-amber-700  mt-2 p-1'>READ MORE </div>
+        
+          
+       </div>
+        </div>
+        </div>
+</div>
+        </div>
+        </div>
+ 
+
+    )
+}
