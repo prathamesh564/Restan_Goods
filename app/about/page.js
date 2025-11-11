@@ -40,6 +40,8 @@ const router=useRouter();
 </div>
   </div>
   </div>
+
+
 <div className="flex md:flex-row md-[10] h-[60%] w-full justify-around items-start mr-[10px]">
       <div className="flex flex-row w-[1/2}"></div>
        <div className="flex flex-row w-[1/2}"></div>
@@ -63,7 +65,43 @@ const router=useRouter();
         </div></div>
        </div>
          </div>
+    <div className="flex md:flex-row  h-[60%] w-full  p-5">
+    <div className="flex flex-row ">
+       <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F6-full.jpg&w=3840&q=75" className='h-[500px] md:w-[500px]   '/> 
+      
+     <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F1-full.jpg&w=3840&q=75" className='h-[500px] md:w-[500px]   '/> 
+ <div className=" absolute bottom-[-100px] md:h-[450px] md:w-[700px] md:mx-[-50px] relative flex flex-col px-2   bg-white  ">
+      
+  <div className="flex flex-col">
+    <div className="font-bold text-2xl text-amber-800 p-5">  About US --- &#62;</div>
+        <div className=" text-4xl font-bold text-gray-500  mx-10">
+We Invite You<br></br>
+To Visit Our Restaurant</div>
+        <div className=" text-1xl text-gray-500 p-4 mx-10">A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio <br></br>Time Bar opens in the center of Florence. The only bar inspired by the 1960s, it will give you a experience that you’ll have a hard time forgetting.
+
+</div>
+        <div className='flex flex-row p-3'>
+           <img
+                    src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F6.png&w=128&q=75"
+                    className="w-[50px] h-[50px] mx-[50px]  rounded-[75%] bg-yellow-600   p-3 "
+                  />
+                  <div className="">
+                    <div className="text-1xl text-gray-500">Call Anytime</div>
+                    <div className="text-2xl font-semibold">+964733-378901</div>
+                  </div>
+        </div>
+
+
+
+  </div>
   
+    
+     <img
+                    src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshape%2F2.png&w=3840&q=75"
+                    className="w-[200px] h-[150px] mx-[50px]  absolute top-[-80px]  mx-[500px] p-3 "
+                  />
+                   </div></div>
+    </div>
        <div
           className="min-h-150"
           style={{

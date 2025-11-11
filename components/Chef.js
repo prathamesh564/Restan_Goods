@@ -13,15 +13,15 @@
             <div className="text-black text-5xl p-4 font-bold mb-6">
               Meet Our Special Chefs
             </div>
-            <div className="flex flex-row mt-10 justify items-center gap-25 ml-50 ">
+            <div className="flex md:flex-row flex-col md:mt-10 justify md:items-center md:gap-25 md:ml-50 ">
               <div className="flex flex-col ">
                 <div>
                   <img
                     src="https://wp.validthemes.net/restan/wp-content/uploads/2024/01/1-1.jpg"
-                    className="w-[350px] h-auto   rounded-[100%] p-4 border border-gray-900"
+                    className="md:w-[350px] h-auto   rounded-[100%] p-4 border border-gray-900"
                   />
                 </div>
-                <div className="bg-yellow-900 w-[310px]  h-18 mt-[-80px]  mx-[20px]">
+                <div className="bg-yellow-900 md:w-[310px]  md:h-18 md:mt-[-80px]  md:mx-[20px]">
                   <div className="text-center text-white text-md font-bold   p-2">
                     Alexander Petllo
                     <br />
@@ -36,7 +36,7 @@
                     className="w-[350px] h-auto   rounded-[100%] p-4 border border-gray-900"
                   />
                 </div>
-                <div className="bg-yellow-900 w-[310px] h-18 mx-[20px] mt-[-80px] ">
+                <div className="bg-yellow-900 md:w-[310px] h-18 mx-[20px] mt-[-80px] ">
                   <div className="text-center text-white text-md font-bold p-2">
                     Mendia Juxef
                     <br />
@@ -51,7 +51,7 @@
                     className="w-[350px] h-auto   rounded-[100%] p-4 border border-gray-900 "
                   />
                 </div>
-                <div className="bg-yellow-900 w-[310px] mx-[20px] h-18 mt-[-80px]">
+                <div className="bg-yellow-900 md:w-[310px] mx-[20px] h-18 mt-[-80px]">
                   <div className="text-center text-white text-md font-bold  p-2">
                     Petro William
                     <br />

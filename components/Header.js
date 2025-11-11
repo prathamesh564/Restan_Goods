@@ -11,7 +11,7 @@
         Buy Now
       </div>
       </div>
-     <div className='bg-yellow-900 md:h-[100px] md:w-full flex md:flex-column md:flex-row  flex justify-center items-center'>
+     <div className='bg-yellow-900 md:h-[100px] md:w-full flex md:flex-column md:flex-row  flex md:justify-center items-center'>
     <button className="  text-white font-bold md:ml-[40px] text-lg md:mx-20"
    onClick={(event)=>{
     router.push(`/home`);
@@ -28,9 +28,15 @@
       <button className="   text-white font-bold md:ml-[40px] text-lg md:mx-20"
    onClick={(event)=>{
     router.push(`/cart`);
-   }}>cart</button>
-      <div className='hidden md:block  text-white font-bold ml-[40px] text-lg md:mx-20'>Blog</div>
-      <div className='hidden md:block  text-white font-bold ml-[40px] text-lg md:mx-20'>contact</div>
+   }}>Cart</button>
+     <button className="   text-white font-bold md:ml-[40px] text-lg md:mx-20"
+   onClick={(event)=>{
+    router.push(`/blog`);
+   }}>Blog</button>
+     <button className="   text-white font-bold md:ml-[40px] text-lg md:mx-20"
+   onClick={(event)=>{
+    router.push(`/menu`);
+   }}>Menu</button>
       
      </div>
 </div>

@@ -26,9 +26,9 @@ export default function Home() {
 const router=useRouter();
 
   return(
-    <div className="min-h-screen bg-gray-100">
+    <div className="md:min-h-screen bg-gray-100 dark:bg-black">
    <Header/>
-   <div className="relative min-h-screen bg-black/50 h-[600px] md:w-full">
+   <div className="relative md:min-h-screen bg-black/50 md:h-[600px] md:w-full">
        <div className="absolute inset-0 bg-black/30"></div>
   <img
     src="https://restan-nextjs.vercel.app/assets/img/banner/14.jpg"
@@ -61,7 +61,7 @@ const router=useRouter();
        <div className="flex flex-col items-center p-5"></div>
     <div className='flex flex-col items-center justify-center md:w-[200px] md:h-[200px] rounded-full md:border-2  border-amber-100 dark:border-amber-100 hover:text-white p-5'>
   
-    <div className="curve-text   ">
+    <div className="hidden md:block curve-text   ">
      <svg width="200" height="200" viewBox="0 0 200 200">
   <defs>
     <path id="curve" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" />
@@ -208,10 +208,11 @@ const router=useRouter();
 </div>
 </div>
 
-<div className="flex flex-col md:flex-row justify-center space-x-10 space-y-0 dark:bg-black items-center mt-[100px] mx-[100px]">
+
+<div className="flex flex-col  md:flex-row justify-center space-x-10 space-y-0 dark:bg-black items-center mt-[100px] mx-[100px]">
 
 
-  <div className='flex flex-col items-left p-10 w-[1000px] h-[400px] rounded-md border-2  border-black dark:border-white  dark:text-white  transition-all duration-500'>
+  <div className='flex flex-col hidden md:block items-left p-10 w-[1000px] h-[400px] rounded-md border-2  border-black dark:border-white  dark:text-white  transition-all duration-500'>
   <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F13.png&w=640&q=75" className=' w-[150px] h-[150px] rounded-full mx-2'/>
     <div className='font-bold text-lg p-2 mt-2'>
       Quality Foods
@@ -221,7 +222,7 @@ const router=useRouter();
       </div>
   </div>
 
-  <div className='flex flex-col items-left  p-10 w-[1000px] h-[400px] rounded-md border-2 border-black dark:border-white dark:text-white transition-all duration-500'>
+  <div className='flex flex-col hidden md:block items-left  p-10 w-[1000px] h-[400px] rounded-md border-2 border-black dark:border-white dark:text-white transition-all duration-500'>
     <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F14.png&w=640&q=75" className=' w-[150px] h-[150px] rounded-lg mx-2'/>
       
     <div className='font-bold md:text-lg md:mt-2 md:p-2'>  
@@ -233,7 +234,7 @@ const router=useRouter();
   </div>
 
 
-  <div className='flex flex-col items-left p-10 w-[1000px] h-[400px] rounded-md border-2 border-black dark:border-white dark:text-white transition-all duration-500'>
+  <div className='flex flex-col hidden md:block items-left p-10 w-[1000px] h-[400px] rounded-md border-2 border-black dark:border-white dark:text-white transition-all duration-500'>
     <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F15.png&w=640&q=75" className=' w-[150px] h-[150px] rounded-full mx-2'/>
     <div className='font-bold text-lg mt-2 p-2'>
       Delicious Recipes
@@ -244,30 +245,31 @@ const router=useRouter();
 </div>
 
 
+
         
       <div className='p-5'></div>
-    <div className=" flex flex-col md:flex-row justify-center h-[500px] rounded-[20px] items-center bg-[#f5c86b] p-1 md:mx-50">
+    <div className=" flex flex-col md:flex-row justify-center md:h-[500px] rounded-[20px] md:items-center bg-[#f5c86b] p-1 md:mx-50">
    
-      <div className="relative flex justify-center items-center md:mb-0 md:mr-12 p-5">
+      <div className="relative flex md:justify-center md:items-center md:mb-0 mr-12  md:p-5">
         <div className="flex flex-col">
         <img
           src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F1.png&w=1080&q=75"
           alt="Main Dish"
-          className="md:w-53 md:h-53 rounded-full"
+          className="md:w-53 hidden md:block md:h-53 rounded-full"
         />
          <div className='p-5'></div><img
           src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F12.png&w=1080&q=75"
           alt="Main Dish"
-          className="md:w-50 md:h-50 rounded-full"
+          className="md:w-50 hidden md:block md:h-50 rounded-full"
         />
 
         </div>
         <img
           src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F15.png&w=1080&q=75"
           alt="Main Dish"
-          className="w-80 h-80 md:w-70 md:h-70 object-cover rounded-full shadow-2xl"
+          className="md:w-75 md:h-75px  rounded-full "
         /> 
-        <div className="absolute bottom-20 right-4 bg-white rounded-full px-6 py-4 text-center shadow-md">
+        <div className="absolute bottom-20 right-4 bg-white rounded-full md:px-6 md:py-4 text-center shadow-md">
           <div className="text-gray-800 font-semibold">Save</div>
           <div className="text-2xl font-bold text-black">55%</div>
         </div>
@@ -281,7 +283,7 @@ const router=useRouter();
         <h1 className="text-4xl md:text-5xl font-bold text-black mb-5">
           Explore Irresistible <br /> Promotions!
         </h1>    
-        <p className="text-gray-700 mb-6 leading-relaxed">
+        <p className="text-gray-700 md:mb-6 md:leading-relaxed">
           Contrasted dissimilar get joy you instrument out reasonably. Again
           keeps at no meant stuff. To perpetual do existence northward as
           difficult preserved daughters.
@@ -296,42 +298,28 @@ const router=useRouter();
   
 <div className='flex flex-col p-5'>
       </div>
-<div className='flex flex-col p-4 items-center justify-center w-[750px] h-[90px] rounded-md border-1 border-black dark:border-white  mx-[450px] duration-500'>
+<div className='flex flex-row p-4 md:items-center md:justify-center md:w-[750px] md:h-[90px] rounded-md border-1 border-black dark:border-white  md:mx-[450px] duration-500'>
   
-    <div className='flex flex-row'>
-<div className='flex flex-col p-5 items-center justify-center w-[200px] h-[70px]  border-black dark:border-white hover:text-white hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-2xl rounded-lg text-yellow-900 '>  Main dishes
-    </div><div className='flex flex-row p-5 items-center justify-center w-[150px] h-[70px] rounded-md  dark:border-white  hover:text-white   hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-yellow-900 text-2xl'> Desserts
-    </div><div className='flex flex-row p-5 items-center justify-center w-[150px] h-[70px] rounded-md  dark:border-white  hover:text-white hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-yellow-900 text-2xl'> Sea Food
-    </div><div className='flex flex-col p-5 items-center justify-center w-[150px] h-[70px] rounded-md   dark:border-white hover:text-white hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-2xl text-yellow-900 '> Beverages
+    <div className='flex md:flex-row '>
+<div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[200px] md:h-[70px]  border-black dark:border-white hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] duration-500 text-2xl rounded-lg text-yellow-900 '>  Main dishes
+    </div><div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[150px] md:h-[70px] rounded-md  dark:border-white  hover:text-white   hover:bg-[#d2a679] transition-all md:mx-[10px] duration-500 text-yellow-900 text-2xl'> Desserts
+    </div><div className='flex hidden md:block md:flex-row p-5 md:items-center md:justify-center md:w-[150px] md:h-[70px] rounded-md  dark:border-white  hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] duration-500 text-yellow-900 text-2xl'> Sea Food
+    </div><div className='flex hidden md:block md:flex-row p-5 md:items-center md:justify-center md:w-[150px] md:h-[70px] rounded-md   dark:border-white hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] duration-500 text-2xl text-yellow-900 '> Beverages
     </div>
     </div>
     </div>
 
-<div className="max-w-[500px] mx-auto text-center rounded-[10px]">
+<div className="md:max-w-[500px] mx-auto text-center rounded-[10px]">
 
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(3, 1fr)",
-          
-          gap: "5px", 
-          margin:"10px",
-          justifyItems: "center",
-          alignItems: "center",
-          padding:"50px",
-          justifyContent:"center",
-          minHeight:"500px",
-          placeContent:"center",
+      <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-x-[520px] m-2 p-1 justify-items-center items-center min-h-[500px]  place-content-center"
         
-           
-        }}
       >
      {menu.map(item=>(
-          <div key={item.id} className="border border-gray-300 m-[10px] p-0 w-[450px] rounded-[30px] bg-white">
+          <div key={item.id} className="border border-gray-300 md:m-[10px] p-0 md:w-[450px] rounded-[30px] bg-white">
            
-            <img src={item.img} alt={item.name} className="w-full p-[1px] rounded-[20px] h-[300px] object-cover"/>
-                <div className=" md:h-[70px] md:w-[350px] relative flex flex-row px-2  mt-[-40px] items-center justify-left  bg-white rounded-[20px] ">
+            <img src={item.img} alt={item.name} className="md:w-full p-[1px] rounded-[20px] md:h-[300px] object-cover"/>
+                <div className=" md:h-[70px] md:w-[350px] relative flex flex-col flex-row px-2  md:mt-[-40px] md:items-center md:justify-left  bg-white rounded-[20px] ">
                         <div className='text-1xl font-bold text-gray-500 mx-[15px]'>⭐{item.rating}</div>
             <div className='text-2xl font-bold text-amber-900 mx-[15px]'>{item.price}</div>
 </div>
@@ -359,14 +347,14 @@ const router=useRouter();
 
 
         
-       <div className=" min-h-[750px] flex flex-col md:flex-row justify-center h-[500px] w-[85%] rounded-[20px] items-center bg-black p-1 md:mx-35">
+       <div className=" min-h-[750px] flex flex-col md:flex-row justify-center md:h-[500px] md:w-[85%] rounded-[20px] items-center bg-black p-1 md:mx-35">
    
       <div className="relative flex justify-center items-center md:mb-0 md:mr-12 p-5">
      
         <img
           src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F16.png&w=2048&q=75"
           alt="Main Dish"
-          className=" md:w-120 md:h-120 object-cover shadow-2xl"
+          className=" md:w-120 md:h-120 md:object-cover md:shadow-2xl"
         /> 
        
      
@@ -383,7 +371,7 @@ const router=useRouter();
 
 
         </div>
-        <div className="flex flex-row items-center">
+        <div className="flex md:flex-row items-center">
           <button className="hover:bg-white border-2 border-white hover:text-black text-white font-semibold px-6 py-3 rounded-full transition">
           App Store
         </button>
@@ -394,18 +382,29 @@ const router=useRouter();
       </div>     
       </div>
       <div className="p-20">  </div>
-      <div className='flex flex-row p-5 justify-center'>
-  <iframe width="860" height="506" src="https://www.youtube.com/embed/F3zw1Gvn4Mk" title="Mr Fox Restaurant Promo Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+      <div className='flex md:flex-row flex-col md:p-5 md:justify-center'>
+<div className="w-full md:w-[860px] h-[506px] aspect-video mx-auto">
+  <iframe
+    className="w-full h-full"
+    src="https://www.youtube.com/embed/F3zw1Gvn4Mk"
+    title="Mr Fox Restaurant Promo Video"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerPolicy="strict-origin-when-cross-origin"
+    allowFullScreen
+  ></iframe>
+</div>
+ 
 
-    <div className=" absolute top-[-100px] md:h-[450px] md:w-[700px] md:mx-[-50px] relative flex flex-col px-2   bg-white  ">
+    <div className=" absolute top-[-100px] md:h-[450px] md:w-[700px] md:mx-[-100px] relative flex flex-col px-2   bg-white  ">
       
   <div className="flex flex-col">
     <div className="font-bold text-4xl p-10">  Opening Hours</div>
         <div className=" text-1xl text-gray-500  mx-10"> A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The <br></br>Patio Time Bar opens in the center.. </div>
         <div className='p-3 mx-10'></div>
-        <div className='font-semibold text-2xl mx-10 p-1'>Sunday to Tuesday:  -----------------  10:00 - 09:00</div>
-        <div className='font-semibold text-2xl mx-10 p-1'>Wednesday to Thursday:  ----------------- 11:30 - 10:30</div>
-        <div className='font-semibold text-2xl mx-10 p-1'>Friday & Saturday:  -----------------  10:30 - 12:00</div>
+        <div className='font-semibold md:text-2xl md:mx-10 md:p-1'>Sunday to Tuesday:  -------------  10:00 - 09:00</div>
+        <div className='font-semibold md:text-2xl md:mx-10 md:p-1'>Wednesday to Thursday:  ------------- 11:30 - 10:30</div>
+        <div className='font-semibold md:text-2xl md:mx-10 md:p-1'>Friday & Saturday:  --------------  10:30 - 12:00</div>
         <div className='flex flex-row p-3'>
            <img
                     src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F6.png&w=128&q=75"
