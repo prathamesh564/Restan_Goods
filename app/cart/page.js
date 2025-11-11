@@ -95,8 +95,9 @@ function CartPage() {
      <div>
      
     </div>
+    <div className='p-10'></div>
     <Offer/>
-    <div className='p-30'></div>
+    <div className='p-25'></div>
     <Footer/>
     </div>
     </div>

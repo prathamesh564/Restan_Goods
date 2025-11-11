@@ -1,14 +1,16 @@
-export default function offer(){
-    return(
-        <div className=" flex flex-col md:flex-row justify-center items-center bg-amber-200 p-1 md:mx-50">
+export default function Offer() {
+  return (
+
+<div className=" flex flex-col md:flex-row justify-center h-[500px] items-center bg-yellow-500 p-1 md:mx-50 border-dashed border-4 border-yellow-300 rounded-[50px]
+ ">
    
       <div className="relative flex justify-center items-center md:mb-0 md:mr-12 p-5">
         <img
-          src="https://th.bing.com/th/id/OIP.UnbyyOl4U-QFdwucdusDpgHaE0?w=286&h=186&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+          src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F15.png&w=1080&q=75"
           alt="Main Dish"
-          className="w-50 h-50 md:w-50 md:h-50 object-cover rounded-full shadow-2xl"
+          className="w-80 h-80 md:w-70 md:h-70 object-cover rounded-full shadow-2xl"
         />
-        <div className="absolute top-4 left-4 bg-white rounded-full px-6 py-4 text-center shadow-md">
+        <div className="absolute bottom-4 right-4 bg-white rounded-full px-6 py-4 text-center shadow-md">
           <div className="text-gray-800 font-semibold">Save</div>
           <div className="text-2xl font-bold text-black">55%</div>
         </div>
@@ -19,7 +21,7 @@ export default function offer(){
         <h4 className="text-sm text-gray-700 tracking-wide mb-2">
           TODAY SPECIAL OFFER
         </h4>
-        <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold text-black mb-5">
           Explore Irresistible <br /> Promotions!
         </h1>    
         <p className="text-gray-700 mb-6 leading-relaxed">
@@ -31,6 +33,9 @@ export default function offer(){
           Order Today
         </button>
       </div>
-      </div>
-    )
-}
+ 
+  
+
+</div>
+  );
+}  
