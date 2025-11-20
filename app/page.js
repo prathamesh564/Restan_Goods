@@ -6,6 +6,7 @@ import {useRouter} from "next/navigation";
 import Footer from'@/components/Footer';
 import Header from'@/components/Header';
 import Chef from'@/components/Chef';  
+import Base from'@/components/Base';
 import Blog from'@/components/Blog';
 export default function Home() {
       const menu= [
@@ -26,40 +27,53 @@ export default function Home() {
 const router=useRouter();
 
   return(
-    <div className="md:min-h-screen bg-gray-100 dark:bg-black">
-   <Header/>
-   <div className="relative md:min-h-screen bg-black/50 md:h-[600px] md:w-full">
-       <div className="absolute inset-0 bg-black/30"></div>
+    <div className="md:min-h-screen dark:bg-black bg-gray-100 overflow-y-hidden overflow-x-hidden  dark:bg-black">
+      <div className='bg-black md:h-[50px] md:w-full   flex md:flex-column md:flex-row  flex items-center bg-black'>
+        <img src="https://public-assets.envato-static.com/assets/logos/envato_market-dd390ae860330996644c1c109912d2bf63885fc075b87215ace9b5b4bdc71cc8.svg" className='h-[20px] mx-10 md:w-[150px] '/>
+        <div className='hidden md:block rounded-[20px] bg-green-600 w-[100px] h-[40px] flex justify-center items-center font-bold text-white text-center  p-3 gap-7 ml-auto mr-10 cursor-pointer hover:bg-green-900 transition-all'> 
+        Buy Now
+      </div>
+      </div>
+   <div className="relative md:min-h-screen md:h-[600px] md:w-full">
+     
   <img
     src="https://restan-nextjs.vercel.app/assets/img/banner/14.jpg"
     alt="Background"
-    className="md:w-full h-full object-cover bg-black/50 rounded-[10px]"
+    className="md:w-full md:h-full h-[400px] object-cover  rounded-[10px]"
   />
-  <div className="absolute top-0 bg-black/10 left-0 w-full h-full  rounded-[80px]">
-  <div className="flex md:flex-col p-5 flex-row h-full w-full items-left md:text-white mx-10">
-    <div className="flex hidden md:block flex-row ">
-      <div className='flex flex-row'>
-      <div className="text-white  md:text-1xl md:mx-5 font-semibold">
+  <div className="absolute md:top-10 top-1  left-0 md:w-full md:h-full rounded-[80px] ">
+
+     <div className='flex md:flex-row flex-col'>
+      <div className="text-white hidden md:block  md:text-1xl md:mx-5 md:font-semibold">
         Phone:+91 8265653623
 
     </div>
-     <div className="text-white  text-1xl md:mx-5 font-semibold">
+     <div className="text-white hidden md:block   md:text-1xl md:mx-5 font-semibold">
        Email id: mrxyz@gamil.com
 
     </div>
     
       <div className="text-white hidden md:block text-1xl flex flex-row justify-left mx-80 font-semibold">
        Location: 175 10h Street, Office 375 Berlin, De 21562
-</div>
-    </div>
-    </div>
-    <div className="border-t border-gray-300 my-3"></div>
+  </div>
+    </div>   
+    <div className="border-t hidden md:block border-gray-300 my-3"></div>
+<Header/>
+ 
+  </div>
 
+     
+
+  
+ 
+  <div className="flex md:flex-col p-5 flex-row h-full w-full items-left md:text-white mx-10">
+    <div className="flex hidden md:block flex-row "></div>
      <div className="absolute inset-0 md:rounded-[80px] flex md:items-center p-5 md:justify-center">
-   <div className="flex flex-col items-center p-5">
-    <div className="text-white md:text-6xl font-[ serif] font-sans">Best Restaurant</div>
-       <div className="flex flex-col items-center p-5"></div>
-    <div className='flex flex-col items-center justify-center md:w-[200px] md:h-[200px] rounded-full md:border-2  border-amber-100 dark:border-amber-100 hover:text-white p-5'>
+   <div className="flex flex-col justify-center p-10">
+      <div className="flex flex-col justify-center p-10"></div>
+    <div className="text-white md:text-6xl text-2xl font-serif ">Best Restaurant</div>
+       <div className="flex flex-col justify-center p-5"></div>
+    <div className='flex flex-col items-center justify-center md:w-[200px] md:h-[200px] mx-[90px] rounded-full md:border-2  border-amber-100 dark:border-amber-100 hover:text-white p-5'>
   
     <div className="hidden md:block curve-text   ">
      <svg width="200" height="200" viewBox="0 0 200 200">
@@ -76,7 +90,7 @@ const router=useRouter();
 </div>
 
 </div>
-</div>
+
 
 </div>
 </div>
@@ -90,12 +104,12 @@ const router=useRouter();
        
            <div className="flex flex-column"></div>
            
-      <div className="min-h-[500px] md:h-[600px] md:w-[850px] md:mx-[100px] relative flex flex-col px-2  mt-[-30px] items-center  bg-white rounded-[50px] ">
+      <div className="min-h-[500px] md:h-[600px] md:w-[850px] md:mx-[100px] relative flex flex-col px-2  mt-[-30px] items-center  dark:bg-gray-600  bg-gray-200 rounded-[50px] ">
         
      <div className="flex md:flex-row w-{1/2}">
          <img src="https://play-lh.googleusercontent.com/8wLUlZ4RTW9MhdU5YrGKTilM-jPTC2Yc1g9hpbrP6dgv_EW1p3PpexuIIw8hTuVfTID0" className='h-[70px] md:w-[70px]  mx-5  p-[-20] rounded-full  '/>
       
-        <div className="text-black text-3xl font-bold mx-[10px] p-5">Book A Table </div>
+        <div className="dark:text-white text-3xl font-serif font-semibold mx-[10px] p-5">Book A Table </div>
      </div>
       <input placeholder="Phone" 
   required={true} 
@@ -141,11 +155,11 @@ const router=useRouter();
 
      </div>
        <div className="flex flex-row w-[1/2}"></div>
-      <div className="min-h-[500px] md:h-[500px] md:w-[95%] md:mx-[50px] relative flex flex-col px-2  items-center bg-white rounded-[50px] ">
+      <div className="min-h-[500px] md:h-[500px] md:w-[95%] md:mx-[50px] relative flex flex-col px-2  items-center bg-white dark:bg-black rounded-[50px] ">
          <div className="flex flex-row w-{1/2}">
          <img src="https://marketplace.canva.com/EAGK6XNcgJM/1/0/1600w/canva-orange-and-yellow-simple-street-food-logo-P8-5uoYzOgo.jpg" className='h-[70px] md:w-[100px] rounded-lg'/>
       
-        <div className="text-black text-3xl font-bold mx-[10px] p-5">🔥Our Popular Dishes </div>
+        <div className="text-black text-3xl dark:text-white font-bold font-serif mx-[10px] p-5">🔥Our Popular Dishes </div>
          <div className='hidden md:block rounded-full bg-yellow-900 w-[50px] h-[50px] flex justify-center items-center font-bold text-white  text-sm gap-7 ml-10 mt-8'>
         <div className="text-2xl text-white p-2 mx-2">
   &#60;
@@ -167,11 +181,11 @@ const router=useRouter();
       className="w-full h-full object-cover"
     />
     <div className="absolute inset-0 flex flex-col justify-end mx-2 pb-6">
-    <div className="text-[15px] font-semibold tracking-tight text-amber-200 font-sans">
+    <div className="text-[15px] font-semibold font-serif tracking-tight text-amber-200 font-sans">
   Sea Food
 </div>
       <div className='pb-1'></div>
-      <h2 className="text-white text-2xl font-bold drop-shadow-lg ">Salmon Fry</h2>
+      <h2 className="text-white text-2xl font-bold font-serif drop-shadow-lg ">Salmon Fry</h2>
     </div>
   </div>
 
@@ -183,11 +197,11 @@ const router=useRouter();
       className="w-full h-full object-cover"
     />
       <div className="absolute inset-0 flex flex-col justify-end mx-2 pb-6">
-    <div className="text-[15px] font-semibold tracking-tight text-amber-200 font-sans">
+    <div className="text-[15px] font-semibold font-serif tracking-tight text-amber-200 font-sans">
   Desserts
 </div>
       <div className='pb-1'></div>
-      <h2 className="text-white text-2xl font-bold drop-shadow-lg ">Cheesecakes</h2>
+      <h2 className="text-white text-2xl font-bold font-serif drop-shadow-lg ">Cheesecakes</h2>
     </div>
   </div>
   <div className="relative w-[210px] h-[300px] rounded-[20px] overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
@@ -197,58 +211,19 @@ const router=useRouter();
       className="w-full h-full object-cover"
     />
       <div className="absolute inset-0 flex flex-col justify-end mx-2 pb-6">
-    <div className="text-[15px] font-semibold tracking-tight text-amber-200 font-sans">
+    <div className="text-[15px] font-semibold font-serif tracking-tight text-amber-200 font-sans">
   Main Dishes
 </div>
       <div className='pb-1'></div>
-      <h2 className="text-white text-2xl font-bold drop-shadow-lg ">Chicken Alfredo</h2>
+      <h2 className="text-white text-1xl font-bold font-serif drop-shadow-lg ">Chicken Alfredo</h2>
     </div>
   </div>
   </div>
 </div>
 </div>
-
-
-<div className="flex flex-col  md:flex-row justify-center space-x-10 space-y-0 dark:bg-black items-center mt-[100px] mx-[100px]">
-
-
-  <div className='flex flex-col hidden md:block items-left p-10 w-[1000px] h-[400px] rounded-md border-2  border-black dark:border-white  dark:text-white  transition-all duration-500'>
-  <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F13.png&w=640&q=75" className=' w-[150px] h-[150px] rounded-full mx-2'/>
-    <div className='font-bold text-lg p-2 mt-2'>
-      Quality Foods
-    </div>
-    <div className='md:text-left text-gray-500 p-4 md:px-4'>
-      Belonging sir curiosity discovery extremity yet forfeited prevailed own off. Traveling by introduced of mr terminated.
-      </div>
-  </div>
-
-  <div className='flex flex-col hidden md:block items-left  p-10 w-[1000px] h-[400px] rounded-md border-2 border-black dark:border-white dark:text-white transition-all duration-500'>
-    <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F14.png&w=640&q=75" className=' w-[150px] h-[150px] rounded-lg mx-2'/>
-      
-    <div className='font-bold md:text-lg md:mt-2 md:p-2'>  
-      Fast Delivery
-    </div>
-    <div className='text-left px-4 text-gray-500 p-2 px-2'>
-      Belonging sir curiosity discovery extremity yet forfeited prevailed own off. Traveling by introduced of mr terminated.
-    </div>
-  </div>
-
-
-  <div className='flex flex-col hidden md:block items-left p-10 w-[1000px] h-[400px] rounded-md border-2 border-black dark:border-white dark:text-white transition-all duration-500'>
-    <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F15.png&w=640&q=75" className=' w-[150px] h-[150px] rounded-full mx-2'/>
-    <div className='font-bold text-lg mt-2 p-2'>
-      Delicious Recipes
-    </div>
-    <div className='text-left md:px-4 text-gray-500 md:p-4'>
-      Belonging sir curiosity discovery extremity yet forfeited prevailed own off. Traveling by introduced of mr terminated.</div>
-    </div>
-</div>
-
-
-
-        
-      <div className='p-5'></div>
-    <div className=" flex flex-col md:flex-row justify-center md:h-[500px] rounded-[20px] md:items-center bg-[#f5c86b] p-1 md:mx-50">
+<Base/>
+<div className='p-5'></div>
+    <div className=" flex flex-col md:flex-row justify-center md:h-[600px]  rounded-[20px] md:items-center bg-[#f5c86b] p-1 border-dashed border-4 border-yellow-300 md:mx-50">
    
       <div className="relative flex md:justify-center md:items-center md:mb-0 mr-12  md:p-5">
         <div className="flex flex-col">
@@ -277,10 +252,10 @@ const router=useRouter();
 </div>
 
       <div className="max-w-md text-center md:text-left">
-        <h4 className="text-sm text-gray-700 tracking-wide mb-2">
+        <h4 className="text-sm text-gray-700 font-serif tracking-wide mb-2">
           TODAY SPECIAL OFFER
         </h4>
-        <h1 className="text-4xl md:text-5xl font-bold text-black mb-5">
+        <h1 className="text-4xl md:text-5xl font-bold font-serif  text-black mb-5">
           Explore Irresistible <br /> Promotions!
         </h1>    
         <p className="text-gray-700 md:mb-6 md:leading-relaxed">
@@ -293,18 +268,18 @@ const router=useRouter();
         </button>
       </div>     
       </div>
-        <div className='flex flex-row justify-center items-center font-semibold text-3xl text-yellow-900 p-5'>------  Food Menu  -------</div>
-    <div className='flex flex-row justify-center items-center text-5xl font-Arial p-3'>Our Specials Menu</div>
+        <div className='flex flex-row justify-center items-center font-semibold font-serif md:text-3xl text-yellow-900 p-5'>&#60;-------&#60;&#60; Food Menu &#62;&#62;-------&#62;</div>
+    <div className='flex flex-row justify-center  dark:text-white items-center text-2xl md:text-5xl font-serif p-3'>Our Specials Menu</div>
   
 <div className='flex flex-col p-5'>
       </div>
 <div className='flex flex-row p-4 md:items-center md:justify-center md:w-[750px] md:h-[90px] rounded-md border-1 border-black dark:border-white  md:mx-[450px] duration-500'>
   
     <div className='flex md:flex-row '>
-<div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[200px] md:h-[70px]  border-black dark:border-white hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] duration-500 text-2xl rounded-lg text-yellow-900 '>  Main dishes
-    </div><div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[150px] md:h-[70px] rounded-md  dark:border-white  hover:text-white   hover:bg-[#d2a679] transition-all md:mx-[10px] duration-500 text-yellow-900 text-2xl'> Desserts
-    </div><div className='flex hidden md:block md:flex-row p-5 md:items-center md:justify-center md:w-[150px] md:h-[70px] rounded-md  dark:border-white  hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] duration-500 text-yellow-900 text-2xl'> Sea Food
-    </div><div className='flex hidden md:block md:flex-row p-5 md:items-center md:justify-center md:w-[150px] md:h-[70px] rounded-md   dark:border-white hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] duration-500 text-2xl text-yellow-900 '> Beverages
+<div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[200px] md:h-[70px] font-serif border-black dark:border-white hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] duration-500 text-2xl rounded-lg  dark:text-white text-yellow-900 '>  Main dishes
+    </div><div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[150px] md:h-[70px] font-serif rounded-md  dark:border-white  hover:text-white   hover:bg-[#d2a679] transition-all md:mx-[10px] duration-500   dark:text-white text-yellow-900 text-2xl'> Desserts
+    </div><div className='flex hidden md:block md:flex-row p-5 md:items-center md:justify-center md:w-[150px] font-serif md:h-[70px] rounded-md  dark:border-white  hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px]  dark:text-white duration-500 text-yellow-900 text-2xl'> Sea Food
+    </div><div className='flex hidden md:block md:flex-row p-5 md:items-center md:justify-center md:w-[150px] font-serif md:h-[70px] rounded-md   dark:border-white hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px]  dark:text-white duration-500 text-2xl text-yellow-900 '> Beverages
     </div>
     </div>
     </div>
@@ -316,21 +291,21 @@ const router=useRouter();
         
       >
      {menu.map(item=>(
-          <div key={item.id} className="border border-gray-300 md:m-[10px] p-0 md:w-[450px] rounded-[30px] bg-white">
+          <div key={item.id} className="border border-gray-300 md:m-[10px] p-0 md:w-[450px] rounded-[30px] dark:bg-black bg-white">
            
             <img src={item.img} alt={item.name} className="md:w-full p-[1px] rounded-[20px] md:h-[300px] object-cover"/>
-                <div className=" md:h-[70px] md:w-[350px] relative flex flex-col flex-row px-2  md:mt-[-40px] md:items-center md:justify-left  bg-white rounded-[20px] ">
-                        <div className='text-1xl font-bold text-gray-500 mx-[15px]'>⭐{item.rating}</div>
-            <div className='text-2xl font-bold text-amber-900 mx-[15px]'>{item.price}</div>
+                <div className=" md:h-[70px] md:w-[350px] relative flex flex-col font-serif flex-row px-2  md:mt-[-40px] md:items-center md:justify-left dark:bg-black bg-white rounded-[20px] ">
+                        <div className='text-1xl font-bold font-serif text-gray-500 dark:text-white mx-[15px]'>⭐{item.rating}</div>
+            <div className='text-2xl font-bold text-amber-900 font-serif dark:text-amber-500 mx-[15px]'>{item.price}</div>
 </div>
-            <div className="font-bold text-2xl" >{item.name} </div>
+            <div className="font-bold text-2xl dark:text-white font-serif" >{item.name} </div>
            
-            <div className="text-gray-500 text-1xl p-2">{item.desc}</div>
+            <div className="text-gray-500 text-1xl font-serif dark:text-white p-2">{item.desc}</div>
            
 
             <button 
             onClick={() => addToCart(item) }
-           className="p-[10px] hover:bg-black w-[80%] hover:text-white border border-gray-200 rounded-[25px] cursor-pointer">
+           className="p-[10px] dark:text-white hover:bg-black w-[80%] hover:text-white border border-gray-200 rounded-[25px] cursor-pointer">
             🛒  Add to Cart
               
              
@@ -347,9 +322,9 @@ const router=useRouter();
 
 
         
-       <div className=" min-h-[750px] flex flex-col md:flex-row justify-center md:h-[500px] md:w-[85%] rounded-[20px] items-center bg-black p-1 md:mx-35">
+       <div className=" min-h-[750px] flex flex-col md:flex-row justify-center md:justify-left md:h-[500px] md:w-[85%] rounded-[20px] items-center bg-black p-1 md:mx-35">
    
-      <div className="relative flex justify-center items-center md:mb-0 md:mr-12 p-5">
+      <div className="relative flex justify-center md:justify-left items-center md:mb-0 md:mr-12 p-5">
      
         <img
           src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F16.png&w=2048&q=75"
@@ -360,18 +335,18 @@ const router=useRouter();
      
 </div>
 
-      <div className="max-w-[40%] text-center md:text-left">
-         <div className=" md:text-5xl font-semibold text-white mb-15">
+      <div className="max-w-[40%] md:text-center md:text-left ">
+         <div className=" md:text-5xl font-serif font-semibold text-white mb-15 md:mb-1">
           Are you Ready to Start <br /> your online Order?
         </div>
      
      
-        <div className="text-white mb-6 leading-relaxed">
+        <div className="text-white md:mb-6 font-serif leading-relaxed">
           Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now
 
 
         </div>
-        <div className="flex md:flex-row items-center">
+        <div className="flex md:flex-row md:items-center items-center">
           <button className="hover:bg-white border-2 border-white hover:text-black text-white font-semibold px-6 py-3 rounded-full transition">
           App Store
         </button>
@@ -382,8 +357,8 @@ const router=useRouter();
       </div>     
       </div>
       <div className="p-20">  </div>
-      <div className='flex md:flex-row flex-col md:p-5 md:justify-center'>
-<div className="w-full md:w-[860px] h-[506px] aspect-video mx-auto">
+      <div className='flex md:flex-row flex-col  md:justify-left'>
+<div className="w-full md:w-[860px] md:h-[506px] aspect-video mx-[30px]">
   <iframe
     className="w-full h-full"
     src="https://www.youtube.com/embed/F3zw1Gvn4Mk"
@@ -396,15 +371,15 @@ const router=useRouter();
 </div>
  
 
-    <div className=" absolute top-[-100px] md:h-[450px] md:w-[700px] md:mx-[-100px] relative flex flex-col px-2   bg-white  ">
+    <div className=" absolute top-[-100px] md:mx-[-50px] md:h-[450px] md:w-[700px]  relative flex flex-col md:px-6  dark:bg-gray-600 bg-white  ">
       
   <div className="flex flex-col">
-    <div className="font-bold text-4xl p-10">  Opening Hours</div>
-        <div className=" text-1xl text-gray-500  mx-10"> A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The <br></br>Patio Time Bar opens in the center.. </div>
-        <div className='p-3 mx-10'></div>
-        <div className='font-semibold md:text-2xl md:mx-10 md:p-1'>Sunday to Tuesday:  -------------  10:00 - 09:00</div>
-        <div className='font-semibold md:text-2xl md:mx-10 md:p-1'>Wednesday to Thursday:  ------------- 11:30 - 10:30</div>
-        <div className='font-semibold md:text-2xl md:mx-10 md:p-1'>Friday & Saturday:  --------------  10:30 - 12:00</div>
+    <div className="font-bold font-serif dark:text-white text-2xl md:text-4xl p-10">  Opening Hours</div>
+        <div className=" text-1xl text-gray-500 dark:text-white font-serif mx-10"> A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The <br></br>Patio Time Bar opens in the center.. </div>
+        <div className='p-3 md:mx-10'></div>
+        <div className='md:font-semibold md:text-2xl dark:text-white md:mx-10 font-serif md:p-1'>Sunday to Tuesday:  ------------  10:00 - 09:00</div>
+        <div className='md:font-semibold md:text-2xl dark:text-white md:mx-10 font-serif md:p-1'>Wednesday to Thursday:  ------- 11:30 - 10:30</div>
+        <div className='md:font-semibold md:text-2xl dark:text-white md:mx-10  font-serif md:p-1'>Friday & Saturday:  --------------  10:30 - 12:00</div>
         <div className='flex flex-row p-3'>
            <img
                     src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F6.png&w=128&q=75"
@@ -416,15 +391,20 @@ const router=useRouter();
                   </div>
         </div>
 
+</div>
+</div>
+ </div>
+ 
+<img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshape%2F4.png&w=3840&q=75" className=" hidden md:block absolute md:ml-[1050px]  md:w-[300px] md:h-[200px] rounded-[50%] md:mt-[-170px]  "/>
 
-
-  </div>
-  </div>
-  </div>
+ 
   <Chef/>
     <Blog/>
 
-
+<button className=" text-white  md:w-[80px] md:h-[80px] md:ml-[1500px] bg-gray-400 rounded-full font-bold"
+   onClick={(event)=>{
+     scrollTo({ top: 0, behavior: 'smooth' });
+   }}><img src="https://wallpapercave.com/wp/wp11853200.jpg" className=" items-center justify-center w-[80px] h-[80px] rounded-full"/></button>
 <div className='p-20'></div>
 <Footer/>
 </div>

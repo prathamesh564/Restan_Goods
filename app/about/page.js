@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Chef from '@/components/Chef';
 // import Footer from'@/components/Footer';
 export default function Home() {
  
@@ -11,6 +12,27 @@ const router=useRouter();
 
   return(
     <div className="bg-gray-200 min-h-screen overflow-x-hidden dark:bg-black">
+        <div className='bg-[#f5c86b] md:h-[50px] md:w-full   flex md:flex-column md:flex-row  flex items-center '>
+        <div className="text-1xl ml-[130px]"> Phone:+91 8265653623</div>
+        <div className="text-1xl mx-[40px]"> Email id: mrxyz@gamil.com</div>
+        <img
+    src="https://th.bing.com/th/id/OIP.xZU2eaShw9o68_ShqRCFmAHaFP?w=274&h=194&c=7&r=0&o=7&cb=ucfimgc2&dpr=1.3&pid=1.7&rm=3"
+    alt="Background"
+    className="md:w-[30px] h-[30px]  ml-[650px] rounded-[50px]"
+  />
+        <div className="text-1xl font-bold mr-auto mx-[10px]">English &#62;</div>
+      
+            <img src = "https://www.bing.com/th/id/OIP.55DCXbXlKDgEBoZhKxpzLAHaHa?w=205&h=211&c=8&rs=1&qlt=90&o=6&cb=ucfimgc1&dpr=1.3&pid=3.1&rm=2" className = " h-8 w-8  mr-[10px] rounded-[5px]" alt = "fb"
+                ></img>
+                <img src = "https://assets1.chainstoreage.com/images/v/max_width_1440/2023-07/twitter-x-logo.png"
+                  className = " h-8 w-8  mr-[10px] " alt = "tw"
+                ></img>
+                 <img src = "https://pngimg.com/uploads/youtube/youtube_PNG102349.png"  className = " h-8 w-12  mr-[10px]" alt = "yt"
+                ></img>
+                <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfIZNwih6eXIffaQEDckh1GtVTsxxkkmMvo4keYRVLAg&s"
+                  className = " h-8 w-8 rounded-[10px] mr-[10px]" alt = "l-in"
+                ></img>
+      </div>
  <Header/>
            <div className="relative min-h-[25%] bg-black/50  md:w-full">
        <div className="absolute inset-0 bg-black/30"></div>
@@ -102,67 +124,7 @@ To Visit Our Restaurant</div>
                   />
                    </div></div>
     </div>
-       <div
-          className="min-h-150"
-          style={{
-            backgroundImage:
-              "url('https://media.istockphoto.com/id/1418379431/photo/luxury-paper-texture-cream-or-gold-seamless-repeating-pattern.jpg?b=1&s=170x170&k=20&c=kSEwLnFHl3vnX2vlpazp1mJKPbHxPFr0l-QNGowADh4=')"}} >
-         
-          <div className=" text-center ">
-            <div className="text-yellow-900 test-md pt-20 items-center justify-center" >------ MASTER CHEFS ------</div>
-            <div className="text-black text-5xl p-4 font-bold mb-6">
-              Meet Our Special Chefs
-            </div>
-            <div className="flex flex-row mt-10 justify items-center gap-25 ml-50 ">
-              <div className="flex flex-col ">
-                <div>
-                  <img
-                    src="https://wp.validthemes.net/restan/wp-content/uploads/2024/01/1-1.jpg"
-                    className="w-[350px] h-auto   rounded-[100%] p-4 border border-gray-900"
-                  />
-                </div>
-                <div className="bg-yellow-900 w-[310px]  h-18 mt-[-80px]  mx-[20px]">
-                  <div className="text-center text-white text-md font-bold   p-2">
-                    Alexander Petllo
-                    <br />
-                    Assistant Chef
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col ">
-                <div>
-                  <img
-                    src="https://wp.validthemes.net/restan/wp-content/uploads/2024/01/2-2.jpg"
-                    className="w-[350px] h-auto   rounded-[100%] p-4 border border-gray-900"
-                  />
-                </div>
-                <div className="bg-yellow-900 w-[310px] h-18 mx-[20px] mt-[-80px] ">
-                  <div className="text-center text-white text-md font-bold p-2">
-                    Mendia Juxef
-                    <br />
-                    Burger King
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col ">
-                <div>
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS00eW8B6XAtmNmhHEMVENWGe8XvwkZX7QXDi4q1oz6Lt_fJZixkuxbQcnXaKTq8NADf5Y&usqp=CAU"
-                    className="w-[350px] h-auto   rounded-[100%] p-4 border border-gray-900 "
-                  />
-                </div>
-                <div className="bg-yellow-900 w-[310px] mx-[20px] h-18 mt-[-80px]">
-                  <div className="text-center text-white text-md font-bold  p-2">
-                    Petro William
-                    <br />
-                    Main Chef
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
+     <Chef/>
      
 <div className="md:p-20"></div>
      

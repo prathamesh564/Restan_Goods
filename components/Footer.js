@@ -1,11 +1,11 @@
 export default function Footer() {
     return(
-        <footer className="bg-black md:h-[300px] md:w-[100%] text-amber-100 clip-path:eli" >
+        <footer className=" dark:bg-gray-500 bg-black md:h-[-300px] md:w-[100%] text-amber-100 clip-path:eli" >
          <div className="flex md:flex-row ">
             <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshape%2F9.png&w=1920&q=75" className=' absolute  md:h-[150px] md:w-[150px] mx-0'/>
              
             <div className=" text-center md:width-[full] md:p-10 text-white align-baseline ">
-                   <div className=" md:h-[300px] md:w-[1350px] md:mx-[100px] relative flex md:flex-row  md:mt-[-140px] items-center  bg-black  ">
+                   <div className=" md:h-[400px] md:w-[1450px] md:mx-[80px] relative flex md:flex-row  md:mt-[-190px] items-center dark:bg-gray-800 bg-black  ">
                 <div className="flex flex-row">
                     <div className="flex flex-col">
                          <div className="flex flex-row">
@@ -42,6 +42,8 @@ export default function Footer() {
             </div> 
             </div>
                     </div>
+               <div className=" hidden md:block w-px h-[250px] bg-white ml-[60px]"></div>
+
                     <div className="flex flex-col md:mx-[40px]">
                         <div className='flex flex-row'>
                               <div className="flex flex-col">
@@ -61,6 +63,7 @@ export default function Footer() {
                            <div className="flex hidden md:block flex-col md:mx-[40px]">
                         <div className='flex hidden md:block flex-row'>
                               <div className="flex flex-col">
+                                
               <div className = "font-bold text-[30px] text-white ml-0  mb-10 flex flex-col">Contact Info</div>
                 <div className = "text-white text-[17px] mb-5 -mt-5 w-70">1234 - Bandit Tringi St, Sonipat, Haryana</div>
                 <div className = "text-white text-[17px] mb-5">Phone: +91 1234567890</div>

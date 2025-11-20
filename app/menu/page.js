@@ -26,6 +26,27 @@ export default function Blog() {
     const router = useRouter();
   return (
     <div className="bg-gray-200 min-h-screen overflow-x-hidden dark:bg-black">
+           <div className='bg-[#f5c86b] md:h-[50px] md:w-full   flex md:flex-column md:flex-row  flex items-center '>
+        <div className="text-1xl ml-[130px]"> Phone:+91 8265653623</div>
+        <div className="text-1xl mx-[40px]"> Email id: mrxyz@gamil.com</div>
+        <img
+    src="https://th.bing.com/th/id/OIP.xZU2eaShw9o68_ShqRCFmAHaFP?w=274&h=194&c=7&r=0&o=7&cb=ucfimgc2&dpr=1.3&pid=1.7&rm=3"
+    alt="Background"
+    className="md:w-[30px] h-[30px]  ml-[650px] rounded-[50px]"
+  />
+        <div className="text-1xl font-bold mr-auto mx-[10px]">English &#62;</div>
+      
+            <img src = "https://www.bing.com/th/id/OIP.55DCXbXlKDgEBoZhKxpzLAHaHa?w=205&h=211&c=8&rs=1&qlt=90&o=6&cb=ucfimgc1&dpr=1.3&pid=3.1&rm=2" className = " h-8 w-8  mr-[10px] rounded-[5px]" alt = "fb"
+                ></img>
+                <img src = "https://assets1.chainstoreage.com/images/v/max_width_1440/2023-07/twitter-x-logo.png"
+                  className = " h-8 w-8  mr-[10px] " alt = "tw"
+                ></img>
+                 <img src = "https://pngimg.com/uploads/youtube/youtube_PNG102349.png"  className = " h-8 w-12  mr-[10px]" alt = "yt"
+                ></img>
+                <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfIZNwih6eXIffaQEDckh1GtVTsxxkkmMvo4keYRVLAg&s"
+                  className = " h-8 w-8 rounded-[10px] mr-[10px]" alt = "l-in"
+                ></img>
+      </div>
         <Header />
         <div className="relative min-h-[25%] bg-black/50  md:w-full">
        <div className="absolute inset-0 bg-black/30"></div>
@@ -71,42 +92,28 @@ export default function Blog() {
     </div>
     </div>
 
-<div className="max-w-[500px] mx-auto text-center rounded-[10px]">
+<div className="md:max-w-[500px] mx-auto text-center rounded-[10px]">
 
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(4, 1fr)",
-          
-          gap: "5px", 
-          margin:"10px",
-          justifyItems: "center",
-          alignItems: "center",
-          padding:"50px",
-          justifyContent:"center",
-          minHeight:"500px",
-          placeContent:"center",
+      <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-x-[520px] m-2 p-1 justify-items-center items-center min-h-[500px]  place-content-center"
         
-           
-        }}
       >
      {menu.map(item=>(
-          <div key={item.id} className="border border-gray-300 m-[10px] p-0 w-[400px] rounded-[30px] bg-white">
+          <div key={item.id} className="border border-gray-300 md:m-[10px] p-0 md:w-[450px] rounded-[30px] dark:bg-black bg-white">
            
-            <img src={item.img} alt={item.name} className="w-full p-[1px] rounded-[20px] h-[300px] object-cover"/>
-                <div className=" md:h-[70px] md:w-[350px] relative flex flex-row px-2  mt-[-40px] items-center justify-left  bg-white rounded-[20px] ">
-                        <div className='text-1xl font-bold text-gray-500 mx-[15px]'>⭐{item.rating}</div>
-            <div className='text-2xl font-bold text-amber-900 mx-[15px]'>{item.price}</div>
+            <img src={item.img} alt={item.name} className="md:w-full p-[1px] rounded-[20px] md:h-[300px] object-cover"/>
+                <div className=" md:h-[70px] md:w-[350px] relative flex flex-col font-serif flex-row px-2  md:mt-[-40px] md:items-center md:justify-left dark:bg-black bg-white rounded-[20px] ">
+                        <div className='text-1xl font-bold font-serif text-gray-500 dark:text-white mx-[15px]'>⭐{item.rating}</div>
+            <div className='text-2xl font-bold text-amber-900 font-serif dark:text-amber-500 mx-[15px]'>{item.price}</div>
 </div>
-            <div className="font-bold text-2xl" >{item.name} </div>
+            <div className="font-bold text-2xl dark:text-white font-serif" >{item.name} </div>
            
-            <div className="text-gray-500 text-1xl p-2">{item.desc}</div>
+            <div className="text-gray-500 text-1xl font-serif dark:text-white p-2">{item.desc}</div>
            
 
             <button 
             onClick={() => addToCart(item) }
-           className="p-[10px] hover:bg-black w-[80%] hover:text-white border border-gray-200 rounded-[25px] cursor-pointer">
+           className="p-[10px] dark:text-white hover:bg-black w-[80%] hover:text-white border border-gray-200 rounded-[25px] cursor-pointer">
             🛒  Add to Cart
               
              
