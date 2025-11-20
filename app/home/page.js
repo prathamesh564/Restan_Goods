@@ -1,12 +1,15 @@
 "use client";
 import React from 'react';
 import Link from 'next/link';
-
+import { useState} from "react";
 import {useRouter} from "next/navigation";
 import Footer from'@/components/Footer';
 import Header from'@/components/Header';
 import Chef from'@/components/Chef';  
+import Base from'@/components/Base';
+import Hour from'@/components/Hour';
 import Blog from'@/components/Blog';
+import Offer from'@/components/Offer';
 export default function Home() {
       const menu= [
     {id:1,name:"Braised Chicken Legs",price:"$34",img:"https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fmenu%2F1.jpg&w=1920&q=75",rating:"5(3.5K)",desc:"4 chicken legs * Chili sauce * Soft Drinks"},
@@ -22,46 +25,64 @@ export default function Home() {
     cartItems.push(item);
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
     alert("Added to cart: " + item.name);
-  };
+  };  
+  const [email, setphone] = useState("");
+ const [timeSlot, setTimeSlot] = useState("");
+ const [date, setdate] = useState("");
+const [person, setPerson] = useState("");
+
 const router=useRouter();
 
   return(
-    <div className="min-h-screen bg-gray-100">
-   <Header/>
-   <div className="relative min-h-screen bg-black/50 h-[600px] md:w-full">
-       <div className="absolute inset-0 bg-black/30"></div>
+    <div className="md:min-h-screen dark:bg-black bg-gray-100 overflow-y-hidden overflow-x-hidden  dark:bg-black">
+      <div className='bg-black md:h-[50px] md:w-full   flex md:flex-column md:flex-row  flex items-center bg-black'>
+        <img src="https://public-assets.envato-static.com/assets/logos/envato_market-dd390ae860330996644c1c109912d2bf63885fc075b87215ace9b5b4bdc71cc8.svg" className='h-[20px] mx-10 md:w-[150px] '/>
+        <div className='hidden md:block rounded-[20px] bg-green-600 w-[100px] h-[40px] flex justify-center items-center font-bold text-white text-center  p-3 gap-7 ml-auto mr-10 cursor-pointer hover:bg-green-900 transition-all'> 
+        Buy Now
+      </div>
+      </div>
+   <div className="relative md:min-h-screen md:h-[600px] md:w-full">
+     
   <img
     src="https://restan-nextjs.vercel.app/assets/img/banner/14.jpg"
     alt="Background"
-    className="md:w-full h-full object-cover bg-black/50 rounded-[10px]"
+    className="md:w-full md:h-full h-[400px] object-cover  rounded-[10px]"
   />
-  <div className="absolute top-0 bg-black/10 left-0 w-full h-full  rounded-[80px]">
-  <div className="flex md:flex-col p-5 flex-row h-full w-full items-left md:text-white mx-10">
-    <div className="flex hidden md:block flex-row ">
-      <div className='flex flex-row'>
-      <div className="text-white  md:text-1xl md:mx-5 font-semibold">
+  <div className="absolute md:top-10 top-1  left-0 md:w-full md:h-full rounded-[80px] ">
+
+     <div className='flex md:flex-row flex-col'>
+      <div className="text-white hidden md:block  md:text-1xl md:mx-5 md:font-semibold">
         Phone:+91 8265653623
 
     </div>
-     <div className="text-white  text-1xl md:mx-5 font-semibold">
+     <div className="text-white hidden md:block   md:text-1xl md:mx-5 font-semibold">
        Email id: mrxyz@gamil.com
 
     </div>
     
       <div className="text-white hidden md:block text-1xl flex flex-row justify-left mx-80 font-semibold">
        Location: 175 10h Street, Office 375 Berlin, De 21562
-</div>
-    </div>
-    </div>
-    <div className="border-t border-gray-300 my-3"></div>
+  </div>
+    </div>   
+    <div className="border-t hidden md:block border-gray-300 my-3"></div>
+<Header/>
+ 
+  </div>
 
-     <div className="absolute inset-0 md:rounded-[80px] flex md:items-center p-5 md:justify-center">
-   <div className="flex flex-col items-center p-5">
-    <div className="text-white md:text-6xl font-[ serif] font-sans">Best Restaurant</div>
-       <div className="flex flex-col items-center p-5"></div>
-    <div className='flex flex-col items-center justify-center md:w-[200px] md:h-[200px] rounded-full md:border-2  border-amber-100 dark:border-amber-100 hover:text-white p-5'>
+     
+
   
-    <div className="curve-text   ">
+ 
+  <div className="flex md:flex-col p-5 flex-row h-full w-full items-left md:text-white mx-10">
+    <div className="flex hidden md:block flex-row "></div>
+     <div className="absolute inset-0 md:rounded-[80px] flex md:items-center p-5 md:justify-center">
+   <div className="flex flex-col justify-center p-10">
+      <div className="flex flex-col justify-center p-10"></div>
+    <div className="text-white md:text-6xl text-2xl font-serif ">Best Restaurant</div>
+       <div className="flex flex-col justify-center p-5"></div>
+    <div className='flex flex-col items-center justify-center md:w-[200px] md:h-[200px] mx-[90px] rounded-full md:border-2  border-amber-100 dark:border-amber-100 hover:text-white p-5'>
+  
+    <div className="hidden md:block curve-text   ">
      <svg width="200" height="200" viewBox="0 0 200 200">
   <defs>
     <path id="curve" d="M 100, 100 m -75, 0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0" />
@@ -76,7 +97,7 @@ const router=useRouter();
 </div>
 
 </div>
-</div>
+
 
 </div>
 </div>
@@ -90,23 +111,23 @@ const router=useRouter();
        
            <div className="flex flex-column"></div>
            
-      <div className="min-h-[500px] md:h-[600px] md:w-[850px] md:mx-[100px] relative flex flex-col px-2  mt-[-30px] items-center  bg-white rounded-[50px] ">
+      <div className="min-h-[500px] md:h-[600px] md:w-[850px] md:mx-[100px] relative flex flex-col px-2  mt-[-30px] items-center  dark:bg-gray-600  bg-gray-200 rounded-[50px] ">
         
      <div className="flex md:flex-row w-{1/2}">
          <img src="https://play-lh.googleusercontent.com/8wLUlZ4RTW9MhdU5YrGKTilM-jPTC2Yc1g9hpbrP6dgv_EW1p3PpexuIIw8hTuVfTID0" className='h-[70px] md:w-[70px]  mx-5  p-[-20] rounded-full  '/>
       
-        <div className="text-black text-3xl font-bold mx-[10px] p-5">Book A Table </div>
+        <div className="dark:text-white text-3xl  font-serif font-semibold mx-[10px] p-5">Book A Table </div>
      </div>
       <input placeholder="Phone" 
   required={true} 
-  className="bg-white p-5 my-3 border-2 border-gray-200 rounded-lg w-[90%]"
-  onChange={(event)=>setEmail(event.target.value)}
+  className="bg-white p-5 my-3 border-1 border-yellow-400 border-2 border-gray-200 rounded-lg w-[90%]"
+  onChange={(event)=>setphone(event.target.value)}
   />
 
 
       <select
         required
-        className="bg-white w-[90%] border-2 border-gray-200 rounded-lg text-gray-500 p-5 my-3"
+        className="bg-white w-[90%] border-1 border-yellow-400 border-2 border-gray-200 rounded-lg text-gray-500 p-5 my-3"
         onChange={(event) => setTimeSlot(event.target.value)}
       >
         <option value="">Select a time slot</option>
@@ -116,36 +137,41 @@ const router=useRouter();
         <option value="4-5">🌇 4:00 PM – 5:00 PM</option>
       </select>
  
-<div className="flex flex-col w-[90%] bg-white border-2 border-gray-200 text-gray-500 rounded-lg p-5 my-3">
-<label htmlFor="date">Date:</label>
+<div className="flex flex-col w-[90%] border-1 border-yellow-400 bg-white border-2 border-gray-200 text-gray-500 rounded-lg p-5 my-3">
+<label htmlFor="date" onChange={(event) => setdate(event.target.value)} >Date:</label>
   <input type="date" id="date" name="date" required></input>
   </div>
       <select
         required
-        className="bg-white w-[90%] border-2 border-gray-200 rounded-lg text-gray-500 p-5 my-3"
-        onChange={(event) => setTimeSlot(event.target.value)}
+        className="bg-white w-[90%] border-1 border-yellow-400 border-2 border-gray-200 rounded-lg text-gray-500 p-5 my-3"
+        onChange={(event) => setPerson(event.target.value)}
       >
         <option value="">Select No. of Person</option>
         <option value="1">1 Person</option>
         <option value="2">2 Person</option>
         <option value="3">3 Person</option>
         <option value="4">4 Person</option>
-      </select>
+      </select >
  <div className='p-2'></div>
-   <button className=" text-white  w-[51%] h-[50px] bg-yellow-900 rounded-lg font-bold"
+   <button className=" text-white border-1 border-yellow-400 w-[51%] h-[50px] bg-yellow-900 rounded-lg font-bold"
    onClick={(event)=>{
       alert("You Record has been Saved Thanks for Your Valuable Time!");
+        console.log("Book A Table");
+       console.log("Phone Number:", email);
+      console.log("Time Slot:", timeSlot);
+      console.log("Date:", date);
+      console.log("No. of Person:",person); 
     router.push(`/home`);
    }}>Book A Table</button>
 
 
      </div>
        <div className="flex flex-row w-[1/2}"></div>
-      <div className="min-h-[500px] md:h-[500px] md:w-[95%] md:mx-[50px] relative flex flex-col px-2  items-center bg-white rounded-[50px] ">
+      <div className="min-h-[500px] md:h-[500px] md:w-[95%] md:mx-[50px] relative flex flex-col px-2  items-center bg-white dark:bg-black rounded-[50px] ">
          <div className="flex flex-row w-{1/2}">
          <img src="https://marketplace.canva.com/EAGK6XNcgJM/1/0/1600w/canva-orange-and-yellow-simple-street-food-logo-P8-5uoYzOgo.jpg" className='h-[70px] md:w-[100px] rounded-lg'/>
       
-        <div className="text-black text-3xl font-bold mx-[10px] p-5">🔥Our Popular Dishes </div>
+        <div className="text-black text-3xl dark:text-white font-bold font-serif mx-[10px] p-5">🔥Our Popular Dishes </div>
          <div className='hidden md:block rounded-full bg-yellow-900 w-[50px] h-[50px] flex justify-center items-center font-bold text-white  text-sm gap-7 ml-10 mt-8'>
         <div className="text-2xl text-white p-2 mx-2">
   &#60;
@@ -167,11 +193,11 @@ const router=useRouter();
       className="w-full h-full object-cover"
     />
     <div className="absolute inset-0 flex flex-col justify-end mx-2 pb-6">
-    <div className="text-[15px] font-semibold tracking-tight text-amber-200 font-sans">
+    <div className="text-[15px] font-semibold font-serif tracking-tight text-amber-200 font-sans">
   Sea Food
 </div>
       <div className='pb-1'></div>
-      <h2 className="text-white text-2xl font-bold drop-shadow-lg ">Salmon Fry</h2>
+      <h2 className="text-white text-2xl font-bold font-serif drop-shadow-lg ">Salmon Fry</h2>
     </div>
   </div>
 
@@ -183,11 +209,11 @@ const router=useRouter();
       className="w-full h-full object-cover"
     />
       <div className="absolute inset-0 flex flex-col justify-end mx-2 pb-6">
-    <div className="text-[15px] font-semibold tracking-tight text-amber-200 font-sans">
+    <div className="text-[15px] font-semibold font-serif tracking-tight text-amber-200 font-sans">
   Desserts
 </div>
       <div className='pb-1'></div>
-      <h2 className="text-white text-2xl font-bold drop-shadow-lg ">Cheesecakes</h2>
+      <h2 className="text-white text-2xl font-bold font-serif drop-shadow-lg ">Cheesecakes</h2>
     </div>
   </div>
   <div className="relative w-[210px] h-[300px] rounded-[20px] overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
@@ -197,152 +223,58 @@ const router=useRouter();
       className="w-full h-full object-cover"
     />
       <div className="absolute inset-0 flex flex-col justify-end mx-2 pb-6">
-    <div className="text-[15px] font-semibold tracking-tight text-amber-200 font-sans">
+    <div className="text-[15px] font-semibold font-serif tracking-tight text-amber-200 font-sans">
   Main Dishes
 </div>
       <div className='pb-1'></div>
-      <h2 className="text-white text-2xl font-bold drop-shadow-lg ">Chicken Alfredo</h2>
+      <h2 className="text-white text-1xl font-bold font-serif drop-shadow-lg ">Chicken Alfredo</h2>
     </div>
   </div>
   </div>
 </div>
 </div>
-
-<div className="flex flex-col md:flex-row justify-center space-x-10 space-y-0 dark:bg-black items-center mt-[100px] mx-[100px]">
-
-
-  <div className='flex flex-col items-left p-10 w-[1000px] h-[400px] rounded-md border-2  border-black dark:border-white  dark:text-white  transition-all duration-500'>
-  <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F13.png&w=640&q=75" className=' w-[150px] h-[150px] rounded-full mx-2'/>
-    <div className='font-bold text-lg p-2 mt-2'>
-      Quality Foods
-    </div>
-    <div className='md:text-left text-gray-500 p-4 md:px-4'>
-      Belonging sir curiosity discovery extremity yet forfeited prevailed own off. Traveling by introduced of mr terminated.
-      </div>
-  </div>
-
-  <div className='flex flex-col items-left  p-10 w-[1000px] h-[400px] rounded-md border-2 border-black dark:border-white dark:text-white transition-all duration-500'>
-    <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F14.png&w=640&q=75" className=' w-[150px] h-[150px] rounded-lg mx-2'/>
-      
-    <div className='font-bold md:text-lg md:mt-2 md:p-2'>  
-      Fast Delivery
-    </div>
-    <div className='text-left px-4 text-gray-500 p-2 px-2'>
-      Belonging sir curiosity discovery extremity yet forfeited prevailed own off. Traveling by introduced of mr terminated.
-    </div>
-  </div>
-
-
-  <div className='flex flex-col items-left p-10 w-[1000px] h-[400px] rounded-md border-2 border-black dark:border-white dark:text-white transition-all duration-500'>
-    <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F15.png&w=640&q=75" className=' w-[150px] h-[150px] rounded-full mx-2'/>
-    <div className='font-bold text-lg mt-2 p-2'>
-      Delicious Recipes
-    </div>
-    <div className='text-left md:px-4 text-gray-500 md:p-4'>
-      Belonging sir curiosity discovery extremity yet forfeited prevailed own off. Traveling by introduced of mr terminated.</div>
-    </div>
-</div>
-
-
-        
-      <div className='p-5'></div>
-    <div className=" flex flex-col md:flex-row justify-center h-[500px] rounded-[20px] items-center bg-[#f5c86b] p-1 md:mx-50">
-   
-      <div className="relative flex justify-center items-center md:mb-0 md:mr-12 p-5">
-        <div className="flex flex-col">
-        <img
-          src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F1.png&w=1080&q=75"
-          alt="Main Dish"
-          className="md:w-53 md:h-53 rounded-full"
-        />
-         <div className='p-5'></div><img
-          src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F12.png&w=1080&q=75"
-          alt="Main Dish"
-          className="md:w-50 md:h-50 rounded-full"
-        />
-
-        </div>
-        <img
-          src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F15.png&w=1080&q=75"
-          alt="Main Dish"
-          className="w-80 h-80 md:w-70 md:h-70 object-cover rounded-full shadow-2xl"
-        /> 
-        <div className="absolute bottom-20 right-4 bg-white rounded-full px-6 py-4 text-center shadow-md">
-          <div className="text-gray-800 font-semibold">Save</div>
-          <div className="text-2xl font-bold text-black">55%</div>
-        </div>
-     
-</div>
-
-      <div className="max-w-md text-center md:text-left">
-        <h4 className="text-sm text-gray-700 tracking-wide mb-2">
-          TODAY SPECIAL OFFER
-        </h4>
-        <h1 className="text-4xl md:text-5xl font-bold text-black mb-5">
-          Explore Irresistible <br /> Promotions!
-        </h1>    
-        <p className="text-gray-700 mb-6 leading-relaxed">
-          Contrasted dissimilar get joy you instrument out reasonably. Again
-          keeps at no meant stuff. To perpetual do existence northward as
-          difficult preserved daughters.
-        </p>
-        <button className="bg-amber-700 text-white font-semibold px-6 py-3 rounded-full hover:bg-amber-800 transition">
-          Order Today
-        </button>
-      </div>     
-      </div>
-        <div className='flex flex-row justify-center items-center font-semibold text-3xl text-yellow-900 p-5'>------  Food Menu  -------</div>
-    <div className='flex flex-row justify-center items-center text-5xl font-Arial p-3'>Our Specials Menu</div>
+<Base/>
+<div className='p-5'></div>
+   <Offer/>
+   <div className='p-5'></div>
+        <div className='flex flex-row justify-center items-center font-semibold font-serif md:text-3xl text-yellow-900 p-5'>&#60;-------&#60;&#60; Food Menu &#62;&#62;-------&#62;</div>
+    <div className='flex flex-row justify-center  dark:text-white items-center text-2xl md:text-5xl font-serif p-3'>Our Specials Menu</div>
   
 <div className='flex flex-col p-5'>
       </div>
-<div className='flex flex-col p-4 items-center justify-center w-[750px] h-[90px] rounded-md border-1 border-black dark:border-white  mx-[450px] duration-500'>
+<div className='flex flex-row p-4 md:items-center md:justify-center md:w-[750px] md:h-[90px] rounded-md border-1 border-black dark:border-white  md:mx-[450px] mx-1 duration-500'>
   
-    <div className='flex flex-row'>
-<div className='flex flex-col p-5 items-center justify-center w-[200px] h-[70px]  border-black dark:border-white hover:text-white hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-2xl rounded-lg text-yellow-900 '>  Main dishes
-    </div><div className='flex flex-row p-5 items-center justify-center w-[150px] h-[70px] rounded-md  dark:border-white  hover:text-white   hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-yellow-900 text-2xl'> Desserts
-    </div><div className='flex flex-row p-5 items-center justify-center w-[150px] h-[70px] rounded-md  dark:border-white  hover:text-white hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-yellow-900 text-2xl'> Sea Food
-    </div><div className='flex flex-col p-5 items-center justify-center w-[150px] h-[70px] rounded-md   dark:border-white hover:text-white hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-2xl text-yellow-900 '> Beverages
+    <div className='flex md:flex-row'>
+<div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[200px] w-20 md:h-[70px] font-serif border-black dark:border-white hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] mx-[-50] duration-500 text-2xl rounded-lg  dark:text-white text-yellow-900 '>  Main dishes
+    </div><div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[150px] w-20 md:h-[70px] font-serif rounded-md  dark:border-white  hover:text-white   hover:bg-[#d2a679] transition-all md:mx-[10px] mx-1 duration-500   dark:text-white text-yellow-900 text-2xl'> Desserts
+    </div><div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[150px] w-20 font-serif md:h-[70px] rounded-md  dark:border-white  hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] mx-10 dark:text-white duration-500 text-yellow-900 text-2xl'> Sea Food
+    </div><div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[150px] w-20 font-serif md:h-[70px] rounded-md   dark:border-white hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] mx-1 dark:text-white duration-500 text-2xl hidden md:block text-yellow-900 '> Beverages
     </div>
     </div>
     </div>
 
-<div className="max-w-[500px] mx-auto text-center rounded-[10px]">
+<div className="md:max-w-[500px] mx-auto text-center rounded-[10px]">
 
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(3, 1fr)",
-          
-          gap: "5px", 
-          margin:"10px",
-          justifyItems: "center",
-          alignItems: "center",
-          padding:"50px",
-          justifyContent:"center",
-          minHeight:"500px",
-          placeContent:"center",
+      <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-x-[520px] m-2 p-1 justify-items-center items-center min-h-[500px]  place-content-center"
         
-           
-        }}
       >
      {menu.map(item=>(
-          <div key={item.id} className="border border-gray-300 m-[10px] p-0 w-[450px] rounded-[30px] bg-white">
+          <div key={item.id} className="border border-gray-300 md:m-[10px] p-0 md:w-[450px] rounded-[30px] dark:bg-black bg-white">
            
-            <img src={item.img} alt={item.name} className="w-full p-[1px] rounded-[20px] h-[300px] object-cover"/>
-                <div className=" md:h-[70px] md:w-[350px] relative flex flex-row px-2  mt-[-40px] items-center justify-left  bg-white rounded-[20px] ">
-                        <div className='text-1xl font-bold text-gray-500 mx-[15px]'>⭐{item.rating}</div>
-            <div className='text-2xl font-bold text-amber-900 mx-[15px]'>{item.price}</div>
+            <img src={item.img} alt={item.name} className="md:w-full p-[1px] rounded-[20px] md:h-[300px] object-cover"/>
+                <div className=" md:h-[70px] md:w-[350px] relative flex flex-col font-serif flex-row px-2  md:mt-[-40px] md:items-center md:justify-left dark:bg-black bg-white rounded-[20px] ">
+                        <div className='text-1xl font-bold font-serif text-gray-500 dark:text-white mx-[15px]'>⭐{item.rating}</div>
+            <div className='text-2xl font-bold text-amber-900 font-serif dark:text-amber-500 mx-[15px]'>{item.price}</div>
 </div>
-            <div className="font-bold text-2xl" >{item.name} </div>
+            <div className="font-bold text-2xl dark:text-white font-serif" >{item.name} </div>
            
-            <div className="text-gray-500 text-1xl p-2">{item.desc}</div>
+            <div className="text-gray-500 text-1xl font-serif dark:text-white p-2">{item.desc}</div>
            
 
             <button 
             onClick={() => addToCart(item) }
-           className="p-[10px] hover:bg-black w-[80%] hover:text-white border border-gray-200 rounded-[25px] cursor-pointer">
+           className="p-[10px] dark:text-white hover:bg-black w-[80%] hover:text-white border border-gray-200 rounded-[25px] cursor-pointer">
             🛒  Add to Cart
               
              
@@ -359,31 +291,31 @@ const router=useRouter();
 
 
         
-       <div className=" min-h-[750px] flex flex-col md:flex-row justify-center h-[500px] w-[85%] rounded-[20px] items-center bg-black p-1 md:mx-35">
+       <div className=" min-h-[750px] flex flex-col md:flex-row md:justify-center justify-left md:h-[500px] md:w-[85%] rounded-[20px] items-center bg-black p-1 md:mx-35 ">
    
-      <div className="relative flex justify-center items-center md:mb-0 md:mr-12 p-5">
+      <div className="relative flex md:justify-center justify-left items-center md:mb-0 md:mr-12  p-5">
      
         <img
           src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F16.png&w=2048&q=75"
           alt="Main Dish"
-          className=" md:w-120 md:h-120 object-cover shadow-2xl"
+          className=" md:w-120 md:h-120 md:object-cover md:shadow-2xl"
         /> 
        
      
 </div>
 
-      <div className="max-w-[40%] text-center md:text-left">
-         <div className=" md:text-5xl font-semibold text-white mb-15">
+      <div className="md:max-w-[40%] w-full md:text-center text-left ">
+         <div className=" md:text-5xl text-2xl font-serif font-semibold  text-white md:mb-15 mb-6">
           Are you Ready to Start <br /> your online Order?
         </div>
      
      
-        <div className="text-white mb-6 leading-relaxed">
+        <div className="text-white md:mb-6  leading-relaxed">
           Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now
 
 
         </div>
-        <div className="flex flex-row items-center">
+        <div className="flex md:flex-row md:items-center md:p-5 p-5 items-center">
           <button className="hover:bg-white border-2 border-white hover:text-black text-white font-semibold px-6 py-3 rounded-full transition">
           App Store
         </button>
@@ -394,42 +326,20 @@ const router=useRouter();
       </div>     
       </div>
       <div className="p-20">  </div>
-      
-      <div className='flex flex-row p-5 justify-center'>
-  <iframe width="860" height="506" src="https://www.youtube.com/embed/F3zw1Gvn4Mk" title="Mr Fox Restaurant Promo Video" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+<Hour/>
+<img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshape%2F4.png&w=3840&q=75" className=" hidden md:block absolute md:ml-[1050px]  md:w-[300px] md:h-[200px] rounded-[50%] md:mt-[-170px]  "/>
 
-    <div className=" absolute top-[-100px] md:h-[450px] md:w-[700px] md:mx-[-50px] relative flex flex-col px-2   bg-white  ">
-      
-  <div className="flex flex-col">
-    <div className="font-bold text-4xl p-10">  Opening Hours</div>
-        <div className=" text-1xl text-gray-500  mx-10"> A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The <br></br>Patio Time Bar opens in the center.. </div>
-        <div className='p-3 mx-10'></div>
-        <div className='font-semibold text-2xl mx-10 p-1'>Sunday to Tuesday:  -----------------  10:00 - 09:00</div>
-        <div className='font-semibold text-2xl mx-10 p-1'>Wednesday to Thursday:  ----------------- 11:30 - 10:30</div>
-        <div className='font-semibold text-2xl mx-10 p-1'>Friday & Saturday:  -----------------  10:30 - 12:00</div>
-        <div className='flex flex-row p-3'>
-           <img
-                    src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F6.png&w=128&q=75"
-                    className="w-[50px] h-[50px] mx-[50px]  rounded-[75%] bg-yellow-600   p-3 "
-                  />
-                  <div className="">
-                    <div className="text-1xl text-gray-500">Call Anytime</div>
-                    <div className="text-2xl font-semibold">+964733-378901</div>
-                  </div>
-        </div>
-
-
-
-  </div>
-  </div>
-  </div>
+ 
   <Chef/>
     <Blog/>
 
-
+<button className=" text-white  md:w-[80px] md:h-[80px] md:ml-[1500px] bg-gray-400 rounded-full font-bold"
+   onClick={(event)=>{
+     scrollTo({ top: 0, behavior: 'smooth' });
+   }}><img src="https://wallpapercave.com/wp/wp11853200.jpg" className=" items-center justify-center w-[80px] h-[80px] rounded-full"/></button>
 <div className='p-20'></div>
 <Footer/>
 </div>
   )
   }
-  
+   

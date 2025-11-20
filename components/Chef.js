@@ -10,7 +10,7 @@
          
           <div className=" text-center ">
             <div className="text-yellow-900 test-md pt-20 items-center justify-center" >------ MASTER CHEFS ------</div>
-            <div className="text-black text-5xl p-4 font-bold mb-6">
+            <div className="text-black md:text-5xl text-3xl p-4 font-bold font-serif mb-6">
               Meet Our Special Chefs
             </div>
             <div className="flex md:flex-row flex-col md:mt-10 justify md:items-center md:gap-25 md:ml-50 ">
@@ -22,7 +22,7 @@
                   />
                 </div>
                 <div className="bg-yellow-900 md:w-[310px]  md:h-18 md:mt-[-80px]  md:mx-[20px]">
-                  <div className="text-center text-white text-md font-bold   p-2">
+                  <div className="text-center text-white font-serif text-md font-bold   p-2">
                     Alexander Petllo
                     <br />
                     Assistant Chef
@@ -37,7 +37,7 @@
                   />
                 </div>
                 <div className="bg-yellow-900 md:w-[310px] h-18 mx-[20px] mt-[-80px] ">
-                  <div className="text-center text-white text-md font-bold p-2">
+                  <div className="text-center font-serif text-white text-md font-bold p-2">
                     Mendia Juxef
                     <br />
                     Burger King
@@ -52,7 +52,7 @@
                   />
                 </div>
                 <div className="bg-yellow-900 md:w-[310px] mx-[20px] h-18 mt-[-80px]">
-                  <div className="text-center text-white text-md font-bold  p-2">
+                  <div className="text-center  font-serif text-white text-md font-bold  p-2">
                     Petro William
                     <br />
                     Main Chef

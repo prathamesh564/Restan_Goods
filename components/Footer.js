@@ -89,7 +89,7 @@ export default function Footer() {
             </div>
             <div className="flex md:flex-row flex-col">
             <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75" className='h-[70px] w-[150px] md:mx-[120px]  '/>
-            <div className="md:text-2xl md:p-10 ">
+            <div className="md:text-2xl md:p-10 font-serif ">
             Copy rights @Preethamdas @Prathameshvshenoy 
             </div>
             </div>

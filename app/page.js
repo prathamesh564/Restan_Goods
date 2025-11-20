@@ -1,13 +1,15 @@
 "use client";
 import React from 'react';
 import Link from 'next/link';
-
+import { useState} from "react";
 import {useRouter} from "next/navigation";
 import Footer from'@/components/Footer';
 import Header from'@/components/Header';
 import Chef from'@/components/Chef';  
+import Hour from'@/components/Hour';
 import Base from'@/components/Base';
 import Blog from'@/components/Blog';
+import Offer from'@/components/Offer';
 export default function Home() {
       const menu= [
     {id:1,name:"Braised Chicken Legs",price:"$34",img:"https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fmenu%2F1.jpg&w=1920&q=75",rating:"5(3.5K)",desc:"4 chicken legs * Chili sauce * Soft Drinks"},
@@ -23,7 +25,12 @@ export default function Home() {
     cartItems.push(item);
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
     alert("Added to cart: " + item.name);
-  };
+  };  
+  const [email, setphone] = useState("");
+ const [timeSlot, setTimeSlot] = useState("");
+ const [date, setdate] = useState("");
+const [person, setPerson] = useState("");
+
 const router=useRouter();
 
   return(
@@ -109,18 +116,18 @@ const router=useRouter();
      <div className="flex md:flex-row w-{1/2}">
          <img src="https://play-lh.googleusercontent.com/8wLUlZ4RTW9MhdU5YrGKTilM-jPTC2Yc1g9hpbrP6dgv_EW1p3PpexuIIw8hTuVfTID0" className='h-[70px] md:w-[70px]  mx-5  p-[-20] rounded-full  '/>
       
-        <div className="dark:text-white text-3xl font-serif font-semibold mx-[10px] p-5">Book A Table </div>
+        <div className="dark:text-white text-3xl  font-serif font-semibold mx-[10px] p-5">Book A Table </div>
      </div>
       <input placeholder="Phone" 
   required={true} 
-  className="bg-white p-5 my-3 border-2 border-gray-200 rounded-lg w-[90%]"
-  onChange={(event)=>setEmail(event.target.value)}
+  className="bg-white p-5 my-3 border-1 border-yellow-400 border-2 border-gray-200 rounded-lg w-[90%]"
+  onChange={(event)=>setphone(event.target.value)}
   />
 
 
       <select
         required
-        className="bg-white w-[90%] border-2 border-gray-200 rounded-lg text-gray-500 p-5 my-3"
+        className="bg-white w-[90%] border-1 border-yellow-400 border-2 border-gray-200 rounded-lg text-gray-500 p-5 my-3"
         onChange={(event) => setTimeSlot(event.target.value)}
       >
         <option value="">Select a time slot</option>
@@ -130,25 +137,30 @@ const router=useRouter();
         <option value="4-5">🌇 4:00 PM – 5:00 PM</option>
       </select>
  
-<div className="flex flex-col w-[90%] bg-white border-2 border-gray-200 text-gray-500 rounded-lg p-5 my-3">
-<label htmlFor="date">Date:</label>
+<div className="flex flex-col w-[90%] border-1 border-yellow-400 bg-white border-2 border-gray-200 text-gray-500 rounded-lg p-5 my-3">
+<label htmlFor="date" onChange={(event) => setdate(event.target.value)} >Date:</label>
   <input type="date" id="date" name="date" required></input>
   </div>
       <select
         required
-        className="bg-white w-[90%] border-2 border-gray-200 rounded-lg text-gray-500 p-5 my-3"
-        onChange={(event) => setTimeSlot(event.target.value)}
+        className="bg-white w-[90%] border-1 border-yellow-400 border-2 border-gray-200 rounded-lg text-gray-500 p-5 my-3"
+        onChange={(event) => setPerson(event.target.value)}
       >
         <option value="">Select No. of Person</option>
         <option value="1">1 Person</option>
         <option value="2">2 Person</option>
         <option value="3">3 Person</option>
         <option value="4">4 Person</option>
-      </select>
+      </select >
  <div className='p-2'></div>
-   <button className=" text-white  w-[51%] h-[50px] bg-yellow-900 rounded-lg font-bold"
+   <button className=" text-white border-1 border-yellow-400 w-[51%] h-[50px] bg-yellow-900 rounded-lg font-bold"
    onClick={(event)=>{
       alert("You Record has been Saved Thanks for Your Valuable Time!");
+        console.log("Book A Table");
+       console.log("Phone Number:", email);
+      console.log("Time Slot:", timeSlot);
+      console.log("Date:", date);
+      console.log("No. of Person:",person); 
     router.push(`/home`);
    }}>Book A Table</button>
 
@@ -157,9 +169,9 @@ const router=useRouter();
        <div className="flex flex-row w-[1/2}"></div>
       <div className="min-h-[500px] md:h-[500px] md:w-[95%] md:mx-[50px] relative flex flex-col px-2  items-center bg-white dark:bg-black rounded-[50px] ">
          <div className="flex flex-row w-{1/2}">
-         <img src="https://marketplace.canva.com/EAGK6XNcgJM/1/0/1600w/canva-orange-and-yellow-simple-street-food-logo-P8-5uoYzOgo.jpg" className='h-[70px] md:w-[100px] rounded-lg'/>
+         <img src="https://marketplace.canva.com/EAGK6XNcgJM/1/0/1600w/canva-orange-and-yellow-simple-street-food-logo-P8-5uoYzOgo.jpg" className='hidden md:block h-[70px] md:w-[100px] rounded-lg'/>
       
-        <div className="text-black text-3xl dark:text-white font-bold font-serif mx-[10px] p-5">🔥Our Popular Dishes </div>
+        <div className="text-black md:text-3xl text-2xl dark:text-white font-bold font-serif mx-[10px] p-5">🔥Our Popular Dishes </div>
          <div className='hidden md:block rounded-full bg-yellow-900 w-[50px] h-[50px] flex justify-center items-center font-bold text-white  text-sm gap-7 ml-10 mt-8'>
         <div className="text-2xl text-white p-2 mx-2">
   &#60;
@@ -223,63 +235,20 @@ const router=useRouter();
 </div>
 <Base/>
 <div className='p-5'></div>
-    <div className=" flex flex-col md:flex-row justify-center md:h-[600px]  rounded-[20px] md:items-center bg-[#f5c86b] p-1 border-dashed border-4 border-yellow-300 md:mx-50">
-   
-      <div className="relative flex md:justify-center md:items-center md:mb-0 mr-12  md:p-5">
-        <div className="flex flex-col">
-        <img
-          src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F1.png&w=1080&q=75"
-          alt="Main Dish"
-          className="md:w-53 hidden md:block md:h-53 rounded-full"
-        />
-         <div className='p-5'></div><img
-          src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F12.png&w=1080&q=75"
-          alt="Main Dish"
-          className="md:w-50 hidden md:block md:h-50 rounded-full"
-        />
-
-        </div>
-        <img
-          src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F15.png&w=1080&q=75"
-          alt="Main Dish"
-          className="md:w-75 md:h-75px  rounded-full "
-        /> 
-        <div className="absolute bottom-20 right-4 bg-white rounded-full md:px-6 md:py-4 text-center shadow-md">
-          <div className="text-gray-800 font-semibold">Save</div>
-          <div className="text-2xl font-bold text-black">55%</div>
-        </div>
-     
-</div>
-
-      <div className="max-w-md text-center md:text-left">
-        <h4 className="text-sm text-gray-700 font-serif tracking-wide mb-2">
-          TODAY SPECIAL OFFER
-        </h4>
-        <h1 className="text-4xl md:text-5xl font-bold font-serif  text-black mb-5">
-          Explore Irresistible <br /> Promotions!
-        </h1>    
-        <p className="text-gray-700 md:mb-6 md:leading-relaxed">
-          Contrasted dissimilar get joy you instrument out reasonably. Again
-          keeps at no meant stuff. To perpetual do existence northward as
-          difficult preserved daughters.
-        </p>
-        <button className="bg-amber-700 text-white font-semibold px-6 py-3 rounded-full hover:bg-amber-800 transition">
-          Order Today
-        </button>
-      </div>     
-      </div>
+   <Offer/>
+   <div className='p-5'></div>
         <div className='flex flex-row justify-center items-center font-semibold font-serif md:text-3xl text-yellow-900 p-5'>&#60;-------&#60;&#60; Food Menu &#62;&#62;-------&#62;</div>
     <div className='flex flex-row justify-center  dark:text-white items-center text-2xl md:text-5xl font-serif p-3'>Our Specials Menu</div>
   
 <div className='flex flex-col p-5'>
       </div>
-<div className='flex flex-row p-4 md:items-center md:justify-center md:w-[750px] md:h-[90px] rounded-md border-1 border-black dark:border-white  md:mx-[450px] duration-500'>
+<div className='flex flex-row p-4 md:items-center md:justify-center md:w-[750px] md:h-[90px] rounded-md border-1 border-black dark:border-white  md:mx-[450px] mx-1 duration-500'>
   
-    <div className='flex md:flex-row '>
-<div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[200px] md:h-[70px] font-serif border-black dark:border-white hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] duration-500 text-2xl rounded-lg  dark:text-white text-yellow-900 '>  Main dishes
-    </div><div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[150px] md:h-[70px] font-serif rounded-md  dark:border-white  hover:text-white   hover:bg-[#d2a679] transition-all md:mx-[10px] duration-500   dark:text-white text-yellow-900 text-2xl'> Desserts
-    </div><div className='flex hidden md:block md:flex-row p-5 md:items-center md:justify-center md:w-[150px] font-serif md:h-[70px] rounded-md  dark:border-white  hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px]  dark:text-white duration-500 text-yellow-900 text-2xl'> Sea Food
-    </div><div className='flex hidden md:block md:flex-row p-5 md:items-center md:justify-center md:w-[150px] font-serif md:h-[70px] rounded-md   dark:border-white hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px]  dark:text-white duration-500 text-2xl text-yellow-900 '> Beverages
+    <div className='flex md:flex-row'>
+<div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[200px] w-20 md:h-[70px] font-serif border-black dark:border-white hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] mx-[-50] duration-500 text-2xl rounded-lg  dark:text-white text-yellow-900 '>  Main dishes
+    </div><div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[150px] w-20 md:h-[70px] font-serif rounded-md  dark:border-white  hover:text-white   hover:bg-[#d2a679] transition-all md:mx-[10px] mx-1 duration-500   dark:text-white text-yellow-900 text-2xl'> Desserts
+    </div><div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[150px] w-20 font-serif md:h-[70px] rounded-md  dark:border-white  hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] mx-10 dark:text-white duration-500 text-yellow-900 text-2xl'> Sea Food
+    </div><div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[150px] w-20 font-serif md:h-[70px] rounded-md   dark:border-white hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] mx-1 dark:text-white duration-500 text-2xl hidden md:block text-yellow-900 '> Beverages
     </div>
     </div>
     </div>
@@ -322,9 +291,9 @@ const router=useRouter();
 
 
         
-       <div className=" min-h-[750px] flex flex-col md:flex-row justify-center md:justify-left md:h-[500px] md:w-[85%] rounded-[20px] items-center bg-black p-1 md:mx-35">
+       <div className=" min-h-[750px] flex flex-col md:flex-row md:justify-center justify-left md:h-[500px] md:w-[85%] rounded-[20px] items-center bg-black p-1 md:mx-35 ">
    
-      <div className="relative flex justify-center md:justify-left items-center md:mb-0 md:mr-12 p-5">
+      <div className="relative flex md:justify-center justify-left items-center md:mb-0 md:mr-12  p-5">
      
         <img
           src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F16.png&w=2048&q=75"
@@ -335,18 +304,18 @@ const router=useRouter();
      
 </div>
 
-      <div className="max-w-[40%] md:text-center md:text-left ">
-         <div className=" md:text-5xl font-serif font-semibold text-white mb-15 md:mb-1">
+      <div className="md:max-w-[40%] w-full md:text-center text-left ">
+         <div className=" md:text-5xl text-2xl font-serif font-semibold  text-white md:mb-15 mb-6">
           Are you Ready to Start <br /> your online Order?
         </div>
      
      
-        <div className="text-white md:mb-6 font-serif leading-relaxed">
+        <div className="text-white md:mb-6  leading-relaxed">
           Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now
 
 
         </div>
-        <div className="flex md:flex-row md:items-center items-center">
+        <div className="flex md:flex-row md:items-center md:p-5 p-5 items-center">
           <button className="hover:bg-white border-2 border-white hover:text-black text-white font-semibold px-6 py-3 rounded-full transition">
           App Store
         </button>
@@ -357,43 +326,7 @@ const router=useRouter();
       </div>     
       </div>
       <div className="p-20">  </div>
-      <div className='flex md:flex-row flex-col  md:justify-left'>
-<div className="w-full md:w-[860px] md:h-[506px] aspect-video mx-[30px]">
-  <iframe
-    className="w-full h-full"
-    src="https://www.youtube.com/embed/F3zw1Gvn4Mk"
-    title="Mr Fox Restaurant Promo Video"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerPolicy="strict-origin-when-cross-origin"
-    allowFullScreen
-  ></iframe>
-</div>
- 
-
-    <div className=" absolute top-[-100px] md:mx-[-50px] md:h-[450px] md:w-[700px]  relative flex flex-col md:px-6  dark:bg-gray-600 bg-white  ">
-      
-  <div className="flex flex-col">
-    <div className="font-bold font-serif dark:text-white text-2xl md:text-4xl p-10">  Opening Hours</div>
-        <div className=" text-1xl text-gray-500 dark:text-white font-serif mx-10"> A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The <br></br>Patio Time Bar opens in the center.. </div>
-        <div className='p-3 md:mx-10'></div>
-        <div className='md:font-semibold md:text-2xl dark:text-white md:mx-10 font-serif md:p-1'>Sunday to Tuesday:  ------------  10:00 - 09:00</div>
-        <div className='md:font-semibold md:text-2xl dark:text-white md:mx-10 font-serif md:p-1'>Wednesday to Thursday:  ------- 11:30 - 10:30</div>
-        <div className='md:font-semibold md:text-2xl dark:text-white md:mx-10  font-serif md:p-1'>Friday & Saturday:  --------------  10:30 - 12:00</div>
-        <div className='flex flex-row p-3'>
-           <img
-                    src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Ficon%2F6.png&w=128&q=75"
-                    className="w-[50px] h-[50px] mx-[50px]  rounded-[75%] bg-yellow-600   p-3 "
-                  />
-                  <div className="">
-                    <div className="text-1xl text-gray-500">Call Anytime</div>
-                    <div className="text-2xl font-semibold">+964733-378901</div>
-                  </div>
-        </div>
-
-</div>
-</div>
- </div>
+    <Hour/>
  
 <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshape%2F4.png&w=3840&q=75" className=" hidden md:block absolute md:ml-[1050px]  md:w-[300px] md:h-[200px] rounded-[50%] md:mt-[-170px]  "/>
 
@@ -410,4 +343,4 @@ const router=useRouter();
 </div>
   )
   }
-  
+   

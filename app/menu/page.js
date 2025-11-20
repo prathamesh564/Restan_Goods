@@ -26,36 +26,39 @@ export default function Blog() {
     const router = useRouter();
   return (
     <div className="bg-gray-200 min-h-screen overflow-x-hidden dark:bg-black">
-           <div className='bg-[#f5c86b] md:h-[50px] md:w-full   flex md:flex-column md:flex-row  flex items-center '>
-        <div className="text-1xl ml-[130px]"> Phone:+91 8265653623</div>
-        <div className="text-1xl mx-[40px]"> Email id: mrxyz@gamil.com</div>
+        <div className='bg-[#f5c86b] md:h-[50px] md:w-full   flex md:flex-column md:flex-row  flex items-center '>
+        <div className="md:text-1xl md:ml-[130px] ml-1"> Phone:+91 8265653623</div>
+        <div className="md:text-1xl md:mx-[40px] mx-1"> Email id: mrxyz@gamil.com</div>
         <img
     src="https://th.bing.com/th/id/OIP.xZU2eaShw9o68_ShqRCFmAHaFP?w=274&h=194&c=7&r=0&o=7&cb=ucfimgc2&dpr=1.3&pid=1.7&rm=3"
     alt="Background"
-    className="md:w-[30px] h-[30px]  ml-[650px] rounded-[50px]"
+    className="md:w-[30px] h-[30px] hidden md:block md:ml-[650px] ml-5 rounded-[50px]"
   />
-        <div className="text-1xl font-bold mr-auto mx-[10px]">English &#62;</div>
+        <div className="text-1xl font-bold mr-auto hidden md:block mx-[10px]">English &#62;</div>
       
             <img src = "https://www.bing.com/th/id/OIP.55DCXbXlKDgEBoZhKxpzLAHaHa?w=205&h=211&c=8&rs=1&qlt=90&o=6&cb=ucfimgc1&dpr=1.3&pid=3.1&rm=2" className = " h-8 w-8  mr-[10px] rounded-[5px]" alt = "fb"
                 ></img>
                 <img src = "https://assets1.chainstoreage.com/images/v/max_width_1440/2023-07/twitter-x-logo.png"
                   className = " h-8 w-8  mr-[10px] " alt = "tw"
                 ></img>
-                 <img src = "https://pngimg.com/uploads/youtube/youtube_PNG102349.png"  className = " h-8 w-12  mr-[10px]" alt = "yt"
+                 <img src = "https://pngimg.com/uploads/youtube/youtube_PNG102349.png"  className = "hidden md:block h-8 w-12  mr-[10px]" alt = "yt"
                 ></img>
                 <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfIZNwih6eXIffaQEDckh1GtVTsxxkkmMvo4keYRVLAg&s"
-                  className = " h-8 w-8 rounded-[10px] mr-[10px]" alt = "l-in"
+                  className = " h-8 w-8 rounded-[10px] hidden md:block mr-[10px]" alt = "l-in"
                 ></img>
       </div>
-        <Header />
+
+    
         <div className="relative min-h-[25%] bg-black/50  md:w-full">
        <div className="absolute inset-0 bg-black/30"></div>
   <img
     src="https://restan-nextjs.vercel.app/assets/img/shape/5.jpg"
     alt="Background"
-    className="md:w-full h-[550px]  bg-black/50 rounded-[10px]"
+    className="md:w-full h-[550px] md:h-[600px] h-[50px]  bg-black/50 rounded-[10px]"
   />
+        <Header />
   <div className="absolute top-0 bg-black/10 left-0 w-full h-full  rounded-[80px]">
+   
   <div className="flex md:flex-col p-5 flex-row h-[25%] w-full items-left md:text-white mx-10">
     <div className="flex hidden md:block flex-row ">
      
@@ -63,10 +66,12 @@ export default function Blog() {
 
 
      <div className="absolute inset-0 md:rounded-[80px] flex md:items-center p-5 md:justify-center">
-  <div className="flex flex-col items-center ">
-    <div className="text-white md:text-5xl font-[serif] font-sans">Restaurant Food Menu</div>
     
-    <div className="text-white md:text-2xl p-5 font-[serif] font-sans"> 🏡 Home &#62; food-menu</div>
+  <div className="flex flex-col items-left items-center ">
+   
+    <div className="text-white md:text-6xl text-2xl font-serif md:mt-1 mt-50">Restaurant Food Menu</div>
+    
+    <div className="text-white md:text-2xl text-1xl p-5 md:p-[50] items-center font-serif font-sans"> 🏡 Home &#62; food-menu</div>
     </div>
        <div className="flex flex-col items-center p-5"></div>
 
@@ -76,11 +81,9 @@ export default function Blog() {
 </div>
   </div>
   </div>
-    <div className='flex flex-row justify-center items-center font-semibold text-3xl text-yellow-900 p-5'>------  Food Menu  -------</div>
-    <div className='flex flex-row justify-center items-center text-5xl font-Arial p-3'>Our Specials Menu</div>
+      <div className='flex flex-row justify-center items-center font-semibold font-serif md:text-3xl text-yellow-900 p-5'>&#60;-------&#60;&#60; Food Menu &#62;&#62;-------&#62;</div>
+    <div className='flex flex-row justify-center  dark:text-white items-center text-2xl md:text-5xl font-serif p-3'>Our Specials Menu</div>
   
-<div className='flex flex-col p-5'>
-      </div>
 <div className='flex flex-col p-4 items-center justify-center w-[750px] h-[90px] rounded-md border-1 border-black dark:border-white  mx-[450px] duration-500'>
   
     <div className='flex flex-row'>
@@ -95,11 +98,11 @@ export default function Blog() {
 <div className="md:max-w-[500px] mx-auto text-center rounded-[10px]">
 
 
-      <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-x-[520px] m-2 p-1 justify-items-center items-center min-h-[500px]  place-content-center"
+      <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 gap-x-[420px] m-2 p-1 justify-items-center items-center min-h-[500px]  place-content-center"
         
       >
      {menu.map(item=>(
-          <div key={item.id} className="border border-gray-300 md:m-[10px] p-0 md:w-[450px] rounded-[30px] dark:bg-black bg-white">
+          <div key={item.id} className="border border-gray-300 md:m-[10px] p-0 md:w-[400px] rounded-[30px] dark:bg-black bg-white">
            
             <img src={item.img} alt={item.name} className="md:w-full p-[1px] rounded-[20px] md:h-[300px] object-cover"/>
                 <div className=" md:h-[70px] md:w-[350px] relative flex flex-col font-serif flex-row px-2  md:mt-[-40px] md:items-center md:justify-left dark:bg-black bg-white rounded-[20px] ">
