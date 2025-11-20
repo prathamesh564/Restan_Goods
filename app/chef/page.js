@@ -109,7 +109,7 @@
                     className="w-[350px] h-auto   rounded-[100%] p-4 border border-gray-900 "
                   />
                 </div>
-                <div className="bg-yellow-900 w-[350px] md:w-[350px] h-18 mt-[-80px]">
+                <div className="bg-yellow-900 md:w-[350px] w-[320px] h-18 mt-[-80px]">
                   <div className="text-center text-white text-md font-bold  p-2">
                     Petro William
                     <br />
@@ -118,15 +118,15 @@
                 </div>
               </div>
             </div>
-            <div className="flex md:flex-row flex-col mt-10 justify items-center gap-30 ml-50">
+            <div className="flex md:flex-row flex-col mt-10 justify items-center  md:gap-30 gap-10 md:ml-50 ml-0">
               <div className="flex flex-col">
                 <div>
                   <img
                     src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F8.jpg&w=1920&q=75"
-                    className="w-[350px] h-auto   rounded-[100%] p-4 border border-gray-900"
+                    className="md:w-[350px] w-[330px] h-auto   rounded-[100%] p-4 border border-gray-900"
                   />
                 </div>
-                <div className="bg-yellow-900 w-[350px] h-18 mt-[-80px]">
+                <div className="bg-yellow-900 md:w-[350px] w-[320px] md:w-[350px] h-18 mt-[-80px]">
                   <div className="text-center text-white text-md font-bold  p-2">
                     Alexander Petllo
                     <br />
@@ -138,10 +138,10 @@
                 <div>
                   <img
                     src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fteam%2F9.jpg&w=1920&q=75"
-                    className="w-[350px] h-auto   rounded-[100%] p-4 border border-gray-900"
+                    className="md:w-[350px] w-[320px] h-auto   rounded-[100%] p-4 border border-gray-900"
                   />
                 </div>
-                <div className="bg-yellow-900 w-[350px]  h-18 mt-[-80px] ">
+                <div className="bg-yellow-900 md:w-[350px] w-[320px] h-18 mt-[-80px] ">
                   <div className="text-center text-white text-md font-bold p-2">
                     Mendia Juxef
                     <br />
@@ -156,7 +156,7 @@
                     className="w-[350px] h-auto   rounded-[100%] p-4 border border-gray-900 "
                   />
                 </div>
-                <div className="bg-yellow-900 w-[350px] h-18 mt-[-80px]">
+                <div className="bg-yellow-900 md:w-[350px] w-[320px] h-18 mt-[-80px]">
                   <div className="text-center text-white text-md font-bold  p-2">
                     Petro William
                     <br />
