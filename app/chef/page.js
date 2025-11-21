@@ -71,7 +71,7 @@
             <div className="text-black font-serif md:text-5xl text-2xl p-4 font-bold mb-6">
               Meet Our Special Chefs
             </div>
-            <div className="flex md:flex-row flex-col mt-10 justify items-center md:gap-30 gap-10 md:ml-25 ml-0">
+            <div className="flex md:flex-row flex-col mt-10 justify items-center md:gap-30 gap-10 md:ml-30 ml-0">
               <div className="flex flex-col">
                 <div>
                   <img
@@ -118,7 +118,7 @@
                 </div>
               </div>
             </div>
-            <div className="flex md:flex-row flex-col mt-10 justify items-center  md:gap-30 gap-10 md:ml-25 ml-0">
+            <div className="flex md:flex-row flex-col mt-10 justify items-center  md:gap-30 gap-10 md:ml-30 ml-0">
               <div className="flex flex-col">
                 <div>
                   <img
