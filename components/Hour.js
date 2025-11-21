@@ -15,7 +15,7 @@ export default function Blog(){
 </div>
  
 
-    <div className=" absolute top-[-100px] md:mx-[-50px] md:h-[450px] md:w-[700px]  relative flex flex-col md:px-6  dark:bg-gray-600 bg-white  ">
+    <div className=" absolute top-[-100px] md:mx-[-50px] md:h-[520px] md:w-[700px]  relative flex flex-col md:px-6  dark:bg-gray-600 bg-white  ">
       
   <div className="flex flex-col">
     <div className="font-bold font-serif dark:text-white text-2xl md:text-4xl p-10">  Opening Hours</div>

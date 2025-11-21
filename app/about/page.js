@@ -55,9 +55,9 @@ const router=useRouter();
         
       <div className="flex flex-col items-left items-center ">
        
-        <div className="text-white md:text-6xl text-2xl font-serif md:mt-1 mt-50">Restaurant Chef</div>
+        <div className="text-white md:text-5xl text-2xl md:mt-1 mt-50 md:ml-0 ml-12 font-serif font-sans">Restaurant Chef</div>
         
-        <div className="text-white md:text-2xl text-1xl p-5 md:p-[50] items-center font-serif font-sans"> 🏡 Home &#62; About-US</div>
+        <div className="text-white md:text-2xl text-sm p-5 md:p-[50]  md:ml-0 ml-12 items-center font-serif font-sans"> 🏡 Home &#62; About-US</div>
         </div>
            <div className="flex flex-col items-center p-5"></div>
     
@@ -79,15 +79,15 @@ const router=useRouter();
      </div>
      <div className="flex md:flex-row flex-col items-left flex p-10">
         <div className="flex md:flex-row flex-col  md:items-left"> <div className="flex md:flex-row flex-col items-left flex">
-        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbrand%2F1.png&w=1080&q=75" className='h-[200px] md:w-[300px] p-3  '/> 
+        <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbrand%2F1.png&w=1080&q=75" className='h-[200px] md:w-[250px] p-3  '/> 
       
      </div>
-      <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbrand%2F3.png&w=1080&q=75" className='h-[200px] md:w-[300px] mx-[20px] p-5 '/>
+      <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbrand%2F3.png&w=1080&q=75" className='h-[200px] md:w-[250px] mx-[20px] p-5 '/>
 
       <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbrand%2F2.png&w=1080&q=75" className='h-[200px] md:w-[300px] p-5  '/>
         
-         <img src= "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbrand%2F4.png&w=1080&q=75" className='hidden md:block h-[200px] md:w-[300px] p-5  '/>
-         <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbrand%2F5.png&w=1080&q=75" className='hidden md:block h-[200px] md:w-[300px] p-5  '/>
+         <img src= "https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbrand%2F4.png&w=1080&q=75" className='hidden md:block h-[200px] md:w-[250px] p-5  '/>
+         <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fbrand%2F5.png&w=1080&q=75" className='hidden md:block h-[200px] md:w-[250px] p-5  '/>
         
         </div></div>
        </div>

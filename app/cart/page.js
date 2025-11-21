@@ -141,7 +141,7 @@ useEffect(() => {
  
   <div className='p-10'></div>
    
-     <button className=" dark:text-white md:mx-[670px] mx-10 justify-center items-center md:w-[250px] w-[200px] rounded-lg md:h-[70px] h-[50px] dark:bg-amber-300 bg-gray-500 font-bold"
+     <button className=" dark:text-white md:mx-[570px] mx-10 justify-center items-center md:w-[250px] w-[200px] rounded-lg md:h-[70px] h-[50px] dark:bg-amber-300 bg-gray-500 font-bold"
    onClick={(event)=>{
       alert("You Record has been Saved Thanks for Your Valuable Time!");
     router.push(`/home`);

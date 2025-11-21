@@ -1,6 +1,6 @@
 export default function Offer() {
   return (
-<div className=" flex flex-col md:flex-row justify-center md:h-[600px]  rounded-[20px] md:items-center bg-[#f5c86b] p-1 border-dashed border-4 border-yellow-300 md:mx-50">
+<div className=" flex flex-col md:w-[1250px] md:flex-row justify-center md:h-[600px]  rounded-[20px] md:items-center bg-[#f5c86b] p-1 border-dashed border-4 border-yellow-300 md:mx-36">
    
       <div className="relative flex md:justify-center md:items-center md:mb-0 mr-12  md:p-5">
         <div className="flex flex-col">

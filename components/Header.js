@@ -32,9 +32,6 @@ export default function Header() {
         <button className="hover:text-amber-400 transition-all" onClick={() => router.push("/menu")}>
           Menu
         </button>
-        <button className="hover:text-amber-400 transition-all" onClick={() => router.push("/food")}>
-          Food
-        </button>
       </div>
     </div>
   );

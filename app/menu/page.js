@@ -84,7 +84,7 @@ export default function Blog() {
       <div className='flex flex-row justify-center items-center font-semibold font-serif md:text-3xl text-yellow-900 p-5'>&#60;-------&#60;&#60; Food Menu &#62;&#62;-------&#62;</div>
     <div className='flex flex-row justify-center  dark:text-white items-center text-2xl md:text-5xl font-serif p-3'>Our Specials Menu</div>
   
-<div className='flex flex-col p-4 items-center justify-center w-[750px] h-[90px] rounded-md border-1 border-black dark:border-white  mx-[450px] duration-500'>
+<div className='flex flex-col p-4 items-center justify-center w-[750px] h-[90px] rounded-md border-1 border-black dark:border-white  mx-[350px] duration-500'>
   
     <div className='flex flex-row'>
 <div className='flex flex-col p-5 items-center justify-center w-[200px] h-[70px]  border-black dark:border-white hover:text-white hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-2xl rounded-lg text-yellow-900 '>  Main dishes
@@ -98,14 +98,14 @@ export default function Blog() {
 <div className="md:max-w-[500px] mx-auto text-center rounded-[10px]">
 
 
-      <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 gap-x-[420px] m-2 p-1 justify-items-center items-center min-h-[500px]  place-content-center"
+      <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4 gap-x-[360px] m-2 p-1 justify-items-center items-center min-h-[450px]  place-content-center"
         
       >
      {menu.map(item=>(
-          <div key={item.id} className="border border-gray-300 md:m-[10px] p-0 md:w-[400px] rounded-[30px] dark:bg-black bg-white">
+          <div key={item.id} className="border border-gray-300 md:m-[10px] p-0 md:w-[350px] rounded-[30px] dark:bg-black bg-white">
            
             <img src={item.img} alt={item.name} className="md:w-full p-[1px] rounded-[20px] md:h-[300px] object-cover"/>
-                <div className=" md:h-[70px] md:w-[350px] relative flex flex-col font-serif flex-row px-2  md:mt-[-40px] md:items-center md:justify-left dark:bg-black bg-white rounded-[20px] ">
+                <div className=" md:h-[70px] md:w-[300px] relative flex flex-col font-serif flex-row px-2  md:mt-[-40px] md:items-center md:justify-left dark:bg-black bg-white rounded-[20px] ">
                         <div className='text-1xl font-bold font-serif text-gray-500 dark:text-white mx-[15px]'>⭐{item.rating}</div>
             <div className='text-2xl font-bold text-amber-900 font-serif dark:text-amber-500 mx-[15px]'>{item.price}</div>
 </div>

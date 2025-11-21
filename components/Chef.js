@@ -13,7 +13,7 @@
             <div className="text-black md:text-5xl text-3xl p-4 font-bold font-serif mb-6">
               Meet Our Special Chefs
             </div>
-            <div className="flex md:flex-row flex-col md:mt-10 justify md:items-center md:gap-25 md:ml-50 ">
+            <div className="flex md:flex-row flex-col md:mt-10 justify md:items-center md:gap-25 md:ml-30 ">
               <div className="flex flex-col ">
                 <div>
                   <img

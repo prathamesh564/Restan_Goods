@@ -5,7 +5,7 @@ export default function Footer() {
             <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshape%2F9.png&w=1920&q=75" className=' absolute  md:h-[150px] md:w-[150px] mx-0'/>
              
             <div className=" text-center md:width-[full] md:p-10 text-white align-baseline ">
-                   <div className=" md:h-[400px] md:w-[1450px] md:mx-[80px] relative flex md:flex-row  md:mt-[-190px] items-center dark:bg-gray-800 bg-black  ">
+                   <div className=" md:h-[400px] md:w-[1250px] md:mx-[80px] relative flex md:flex-row  md:mt-[-190px] items-center dark:bg-gray-800 bg-black  ">
                 <div className="flex flex-row">
                     <div className="flex flex-col">
                          <div className="flex flex-row">

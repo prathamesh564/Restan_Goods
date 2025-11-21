@@ -36,8 +36,8 @@ const router=useRouter();
   return(
     <div className="md:min-h-screen dark:bg-black bg-gray-100 overflow-y-hidden overflow-x-hidden  dark:bg-black">
       <div className='bg-black md:h-[50px] md:w-full   flex md:flex-column md:flex-row  flex items-center bg-black'>
-        <img src="https://public-assets.envato-static.com/assets/logos/envato_market-dd390ae860330996644c1c109912d2bf63885fc075b87215ace9b5b4bdc71cc8.svg" className='h-[20px] mx-10 md:w-[150px] '/>
-        <div className='hidden md:block rounded-[20px] bg-green-600 w-[100px] h-[40px] flex justify-center items-center font-bold text-white text-center  p-3 gap-7 ml-auto mr-10 cursor-pointer hover:bg-green-900 transition-all'> 
+        <img src="https://public-assets.envato-static.com/assets/logos/envato_market-dd390ae860330996644c1c109912d2bf63885fc075b87215ace9b5b4bdc71cc8.svg" className='h-[20px]  md:mx-10 mx-0 md:w-[150px] w-[200px] '/>
+        <div className=' rounded-[20px] bg-green-600 w-[100px] md:h-[40px] flex justify-center items-center font-bold text-white text-center  p-3 gap-7 ml-auto mr-10 cursor-pointer hover:bg-green-900 transition-all'> 
         Buy Now
       </div>
       </div>
@@ -48,6 +48,7 @@ const router=useRouter();
     alt="Background"
     className="md:w-full md:h-full h-[400px] object-cover  rounded-[10px]"
   />
+  
   <div className="absolute md:top-10 top-1  left-0 md:w-full md:h-full rounded-[80px] ">
 
      <div className='flex md:flex-row flex-col'>
@@ -166,7 +167,7 @@ const router=useRouter();
 
 
      </div>
-       <div className="flex flex-row w-[1/2}"></div>
+  
       <div className="min-h-[500px] md:h-[500px] md:w-[95%] md:mx-[50px] relative flex flex-col px-2  items-center bg-white dark:bg-black rounded-[50px] ">
          <div className="flex flex-row w-{1/2}">
          <img src="https://marketplace.canva.com/EAGK6XNcgJM/1/0/1600w/canva-orange-and-yellow-simple-street-food-logo-P8-5uoYzOgo.jpg" className='hidden md:block h-[70px] md:w-[100px] rounded-lg'/>
@@ -184,9 +185,9 @@ const router=useRouter();
 
       </div>
      </div>
-   <div className="flex flex-wrap  justify-center items-center gap-5 p-10">
+   <div className="flex flex-wrap  justify-center items-center gap-4 p-10">
 
-  <div className="relative w-[210px] h-[300px] rounded-[20px] overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+  <div className="relative w-[180px] h-[300px] rounded-[20px] overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
     <img
       src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fmenu%2F27.jpg&w=1920&q=75"
       alt="Burger"
@@ -202,7 +203,7 @@ const router=useRouter();
   </div>
 
 
-  <div className="relative w-[210px] h-[300px] rounded-[20px] overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+  <div className="relative w-[180px] h-[300px] rounded-[20px] overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
     <img
       src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fmenu%2F26.jpg&w=1920&q=75"
       alt="Pasta"
@@ -216,7 +217,7 @@ const router=useRouter();
       <h2 className="text-white text-2xl font-bold font-serif drop-shadow-lg ">Cheesecakes</h2>
     </div>
   </div>
-  <div className="relative w-[210px] h-[300px] rounded-[20px] overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+  <div className="relative w-[180px] h-[300px] rounded-[20px] overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
     <img
       src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fmenu%2F25.jpg&w=1920&q=75"
       alt="Pasta"
@@ -242,7 +243,7 @@ const router=useRouter();
   
 <div className='flex flex-col p-5'>
       </div>
-<div className='flex flex-row p-4 md:items-center md:justify-center md:w-[750px] md:h-[90px] rounded-md border-1 border-black dark:border-white  md:mx-[450px] mx-1 duration-500'>
+<div className='flex flex-row p-4 md:items-center md:justify-center md:w-[750px] md:h-[90px] rounded-md border-1 border-black dark:border-white  md:mx-[350px] mx-1 duration-500'>
   
     <div className='flex md:flex-row'>
 <div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[200px] w-20 md:h-[70px] font-serif border-black dark:border-white hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] mx-[-50] duration-500 text-2xl rounded-lg  dark:text-white text-yellow-900 '>  Main dishes
@@ -256,7 +257,7 @@ const router=useRouter();
 <div className="md:max-w-[500px] mx-auto text-center rounded-[10px]">
 
 
-      <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-x-[520px] m-2 p-1 justify-items-center items-center min-h-[500px]  place-content-center"
+      <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 gap-x-[480px] m-2 p-1 justify-items-center items-center min-h-[500px]  place-content-center"
         
       >
      {menu.map(item=>(
@@ -334,7 +335,7 @@ const router=useRouter();
   <Chef/>
     <Blog/>
 
-<button className=" text-white  md:w-[80px] md:h-[80px] md:ml-[1500px] ml-[20px] bg-gray-400 rounded-full font-bold"
+<button className=" text-white  md:w-[80px] md:h-[80px] md:ml-[1300px] ml-[20px] bg-gray-400 rounded-full font-bold"
    onClick={(event)=>{
      scrollTo({ top: 0, behavior: 'smooth' });
    }}><img src="https://wallpapercave.com/wp/wp11853200.jpg" className=" items-center justify-center w-[80px] h-[80px] rounded-full"/></button>
