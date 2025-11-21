@@ -25,8 +25,8 @@ useEffect(() => {
         const updatedCart = cartItems.filter(item => item.id !== id);
         setCartItems(updatedCart);
         localStorage.setItem('cartItems', JSON.stringify(updatedCart));
-        const total = updatedCart.reduce((sum, item) => sum + item.price, 0);
-        setTotalPrice(total);
+        const totalPrice = updatedCart.reduce((sum, item) => sum + (item.price), 0);
+        setTotalPrice(totalPrice);
     };
     const router=useRouter();
      return(
@@ -53,7 +53,7 @@ useEffect(() => {
                   className = " h-8 w-8 rounded-[10px] mr-[10px]" alt = "l-in"
                 ></img>
       </div>
-      <Header/>
+    
        <div className="relative min-h-[25%] bg-black/50  md:w-full">
        <div className="absolute inset-0 bg-black/30"></div>
   <img
@@ -61,6 +61,7 @@ useEffect(() => {
     alt="Background"
     className="md:w-full h-[550px]  bg-black/50 rounded-[10px]"
   />
+    <Header/>
   <div className="absolute top-0 bg-black/10 left-0 w-full h-full  rounded-[80px]">
   <div className="flex md:flex-col p-5 flex-row h-[25%] w-full items-left md:text-white mx-10">
     <div className="flex hidden md:block flex-row ">
@@ -70,9 +71,9 @@ useEffect(() => {
 
      <div className="absolute inset-0 md:rounded-[80px] flex md:items-center p-5 md:justify-center">
   <div className="flex flex-col items-center ">
-    <div className="text-white md:text-5xl font-[serif] font-sans">Cart Page</div>
+    <div className="text-white md:text-5xl text-2xl md:mt-1 mt-50 md:ml-0 ml-12 font-serif font-sans">Cart Page</div>
     
-    <div className="text-white md:text-2xl p-5 font-[serif] font-sans"> 🏡 Home &#62; Cart</div>
+    <div className="text-white md:text-2xl p-6 font-serif md:ml-0 ml-10  font-sans"> 🏡 Home &#62; Cart</div>
     </div>
        <div className="flex flex-col items-center p-5"></div>
 
@@ -83,20 +84,20 @@ useEffect(() => {
   </div>
   </div>
   <div className="p-10"></div>
-   <div className='bg-gray-300 md:h-[100px] mx-[70px] md:w-[85%] flex md:flex-column md:flex-row  justify-center items-center'>
-         <div className='hidden md:block  dark:text-white font-bold ml-[40px] text-lg md:mx-20'>Remove</div>
-      <div className='hidden md:block  dark:text-white font-bold ml-[40px] text-lg md:mx-20'>Thumbnail</div>
-           <div className='hidden md:block  dark:text-white font-bold ml-[40px] text-lg md:mx-20'>Product</div>
-      <div className='hidden md:block  dark:text-white font-bold ml-[40px] text-lg md:mx-20'>Price</div>
-           <div className='hidden md:block  dark:text-white font-bold ml-[40px] text-lg md:mx-20'>Quantity</div>
-      <div className='hidden md:block  dark:text-white font-bold ml-[40px] text-lg md:mx-20'>Total</div>
+   <div className='bg-gray-300 md:h-[100px] mx-[70px] md:w-[90%] flex md:flex-column md:flex-row  justify-center items-center'>
+         <div className='hidden md:block  dark:text-black font-bold ml-[40px] text-lg md:mx-20'>Remove</div>
+      <div className='hidden md:block  dark:text-black font-bold ml-[40px] text-lg md:mx-20'>Thumbnail</div>
+           <div className='hidden md:block  dark:text-black font-bold ml-[40px] text-lg md:mx-20'>Product</div>
+      <div className='hidden md:block  dark:text-black font-bold ml-[40px] text-lg md:mx-20'>Price</div>
+           <div className='hidden md:block  dark:text-black font-bold ml-[40px] text-lg md:mx-20'>Quantity</div>
+      <div className='hidden md:block  dark:text-black font-bold ml-[40px] text-lg md:mx-20'>Total</div>
    </div>
   <div className="relative min-h-[25%] w-full py-6">
   <div className="px-5 md:px-10">
-    <h1 className="text-2xl font-bold text-center mb-6 text-gray-800">Your Cart</h1>
+    <h1 className="text-4xl font-bold text-center mb-6 font-serif dark:text-gray-100">Your Cart</h1>
 
     {cartItems.length === 0 ? (
-      <p className="text-center text-gray-500">Your cart is empty.</p>
+      <p className="text-center dark:text-gray-200 text-gray-500 font-serif">Your cart is empty.</p>
     ) : (
       <div className="bg-white rounded-2xl shadow-md p-6">
         <div className="space-y-4">
@@ -111,20 +112,23 @@ useEffect(() => {
                   alt={item.name}
                   className="w-20 h-20 rounded-lg object-cover"
                 />
-                <span className="text-lg font-medium text-gray-800">
+                <span className="md:text-lg text-1xl font-medium  text-gray-800">
                   {item.name}
                 </span>
               </div>
+              <div className='flex md:flex-row flex-col md:mt-0 mt-20'>
 
-              <div className="flex items-center space-x-4">
+              <div className="flex md:items-center space-x-4 md:space-x-10">
                 <span className="text-gray-700 font-semibold">{item.price}</span>
                 <button
                   onClick={() => removeFromCart(item.id)}
-                  className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg transition"
+                  className="bg-red-500 hover:bg-red-600 text-white md:px-4 px-2 md:py-2 py-1 rounded-lg transition"
                 >
                   Remove
                 </button>
-              </div>
+                </div>
+                </div>
+            
             </div>
           ))}
         </div>
@@ -137,7 +141,7 @@ useEffect(() => {
  
   <div className='p-10'></div>
    
-     <button className=" dark:text-white mx-[650px] justify-center items-center w-[250px] rounded-lg h-[70px] bg-gray-500 font-bold"
+     <button className=" dark:text-white md:mx-[670px] mx-10 justify-center items-center md:w-[250px] w-[200px] rounded-lg md:h-[70px] h-[50px] dark:bg-amber-300 bg-gray-500 font-bold"
    onClick={(event)=>{
       alert("You Record has been Saved Thanks for Your Valuable Time!");
     router.push(`/home`);
@@ -149,7 +153,7 @@ useEffect(() => {
     </div>
     <div className='p-10'></div>
     <Offer/>
-    <div className='p-25'></div>
+    <div className='md:p-25 p-0'></div>
     <Footer/>
     </div>
     </div>

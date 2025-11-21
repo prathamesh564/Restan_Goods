@@ -111,7 +111,7 @@ const router=useRouter();
        
            <div className="flex flex-column"></div>
            
-      <div className="min-h-[500px] md:h-[600px] md:w-[850px] md:mx-[100px] relative flex flex-col px-2  mt-[-30px] items-center  dark:bg-gray-600  bg-gray-200 rounded-[50px] ">
+      <div className="min-h-[500px] md:h-[600px] md:w-[850px] md:mx-[100px] relative flex flex-col px-2  mt-[-30px] items-center  dark:bg-black border-1 dark:border-gray-500  bg-gray-200 rounded-[50px] ">
         
      <div className="flex md:flex-row w-{1/2}">
          <img src="https://play-lh.googleusercontent.com/8wLUlZ4RTW9MhdU5YrGKTilM-jPTC2Yc1g9hpbrP6dgv_EW1p3PpexuIIw8hTuVfTID0" className='h-[70px] md:w-[70px]  mx-5  p-[-20] rounded-full  '/>
@@ -334,11 +334,11 @@ const router=useRouter();
   <Chef/>
     <Blog/>
 
-<button className=" text-white  md:w-[80px] md:h-[80px] md:ml-[1500px] bg-gray-400 rounded-full font-bold"
+<button className=" text-white  md:w-[80px] md:h-[80px] md:ml-[1500px] ml-[20px] bg-gray-400 rounded-full font-bold"
    onClick={(event)=>{
      scrollTo({ top: 0, behavior: 'smooth' });
    }}><img src="https://wallpapercave.com/wp/wp11853200.jpg" className=" items-center justify-center w-[80px] h-[80px] rounded-full"/></button>
-<div className='p-20'></div>
+<div className='md:p-20 p-5'></div>
 <Footer/>
 </div>
   )
