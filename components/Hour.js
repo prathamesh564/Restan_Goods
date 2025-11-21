@@ -30,8 +30,8 @@ export default function Blog(){
                     className="w-[50px] h-[50px] mx-[50px]  rounded-[75%] bg-yellow-600   p-3 "
                   />
                   <div className="">
-                    <div className="text-1xl text-gray-500">Call Anytime</div>
-                    <div className="text-2xl font-semibold">+964733-378901</div>
+                    <div className="text-1xl dark:text-white text-gray-500">Call Anytime</div>
+                    <div className="md:text-2xl text-lg font-semibold">+964733-378901</div>
                   </div>
         </div>
 

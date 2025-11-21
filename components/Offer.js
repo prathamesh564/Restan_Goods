@@ -21,7 +21,7 @@ export default function Offer() {
           alt="Main Dish"
           className="md:w-75 md:h-75px  rounded-full "
         /> 
-        <div className="absolute md:bottom-20 botton-10 right-4 bg-white rounded-full md:px-6 md:py-4 text-center shadow-md">
+        <div className="absolute md:bottom-20  hidden md:block botton-10 right-4 bg-white rounded-full md:px-6 md:py-4 text-center shadow-md">
           <div className="text-gray-800 font-semibold">Save</div>
           <div className="text-2xl font-bold text-black">55%</div>
         </div>

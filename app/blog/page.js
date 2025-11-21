@@ -2,6 +2,7 @@
 import { useRouter } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Offer from"@/components/Offer";
 export default function Blog() {
   const router = useRouter();
   return (
@@ -55,27 +56,31 @@ export default function Blog() {
    </div>
      </div>
      </div>
-   <div className='flex flex-row justify-center items-center  md:text-2xl text-1xl text-yellow-900 p-5'>&#60;-------&#60;&#60; News & Blog  &#62;&#62;-------&#62;</div>
-    <div className='flex flex-row justify-center items-center md:text-4xl text-1xl font-Arial p-1'>Our Latest News & Blog</div>
-    <div className='flex flex-col md:justify-center justify-left items-center  md:text-lg p-10 md:mx-20 mx-130'>
+   <div className='flex flex-row justify-center items-center  md:text-2xl text-1xl dark:text-white text-yellow-900 p-5'>&#60;-------&#60;&#60; News & Blog  &#62;&#62;-------&#62;</div>
+    <div className='flex flex-row justify-center items-center md:text-4xl text-1xl dark:text-white font-Arial p-1'>Our Latest News & Blog</div>
+    <div className='flex flex-col md:justify-center justify-left items-center  md:text-lg p-10 md:mx-20 mx-10'>
         <div className="flex flex-col">
         <div className="flex flex-col mx-10">
             <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F1.jpg&w=1920&q=75" className='md:h-[700px] h-[250px] md:w-[1200px] w-[300px] rounded-[20px]'/>
-         <div className=" md:h-[400px] md:w-[1060px] relative flex flex-row px-2  mt-[-40px]  mx-[50px]  bg-white  ">
-                      <div className=" md:h-[130px] md:w-[130px] relative flex flex-row px-2 ml-[800px] mx-[50px] mt-[-50px] bg-[#d2a679]  ">       
+         <div className="  md:h-[400px] h-[190px] md:w-[1060px] w-[275px] relative flex flex-row px-2  md:mt-[-40px] mt-[-50px]   md:mx-[50px] mx-[10px] dark:bg-black border-1 border-gray-200 bg-white ">
+                      <div className=" md:h-[130px] md:w-[130px] relative flex flex-row px-2 ml-[800px] hidden md:block mx-[50px] mt-[-50px] bg-[#d2a679]  ">       
                          <div className="flex flex-col">
-                        <div className='text-5xl text-white font-bold mx-[16px] p-3 '>24</div>
-                        <div className='text-3xl text-white mx-[25px] '>NOV</div>
+                        <div className='md:text-5xl font-serif text-white font-bold mx-[16px] p-3 '>24</div>
+                        <div className='md:text-3xl font-serif text-white mx-[25px] '>NOV</div>
         </div>
         </div>  
-        <div className="flex flex-col  absolute left-[1] p-15 ">
-             <div className='text-lg text-gray-600  mt-2 mx-2 p-2'> 🗓 12 August 2024 👾 John Baus</div>
+        <div className="flex flex-col  absolute md:left-[1]  md:p-15 p-0 ">
+             <div className='md:text-lg text-sm text-gray-600 font-serif dark:text-white   md:mt-2 mt-0 mx-2 md:p-2 p-0'> 🗓 12 August 2024 👾 John Baus</div>
         
-            <div className='text-3xl text-black font-marcallus font-semibold p-2  '>Picked up a Brussels burger Sprouts with ham</div>
-              <div className='text-lg text-gray-600  mt-2 mx-2 p-2'> Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now
+            <div className='md:text-3xl text-1xl text-black font-marcallus dark:text-yellow-600 font-semibold font-serif   md:p-2 p-0  '>Picked up a Brussels burger Sprouts with ham</div>
+              <div className='md:text-lg text-xs text-gray-600  md:mt-2 mt-0 mx-2 font-serif dark:text-white  md:p-2 p-0'> Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now
 
 </div>
-            <div className='text-2xl text-amber-700  mt-2 p-1'>READ MORE &#62;</div>
+             <button className=" dark:text-black justify-center items-center md:w-[250px] md:mt-[10px] mt-0 md:w-[200px] w-[130px] rounded-lg md:h-[60px] h-[25px] bg-[#f5c86b] font-bold"
+   onClick={(event)=>{
+    router.push(`/about`);
+   }}>READ MORE &#62;</button>
+        
         
           
        </div>
@@ -85,45 +90,51 @@ export default function Blog() {
             <div className="flex flex-col mx-10 ">
             
             <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F2.jpg&w=1920&q=75" className='md:h-[700px] h-[250px] md:w-[1200px] w-[300px] rounded-[20px]'/>
-         <div className=" md:h-[400px] md:w-[1060px] relative flex flex-row px-2 mx-[50px] mt-[-40px]    bg-white  ">
-                      <div className=" md:h-[130px] md:w-[130px] relative flex flex-row px-2 md:ml-[800px]  mx-[50px] mt-[-50px] bg-[#d2a679]  ">
+         <div className="  md:h-[400px] h-[190px] md:w-[1060px] w-[275px] relative flex flex-row px-2  md:mt-[-40px] mt-[-50px]   md:mx-[50px] mx-[10px] dark:bg-black border-1 border-gray-200  bg-white  ">
+                      <div className=" md:h-[130px] md:w-[130px] relative flex hidden md:block flex-row px-2 md:ml-[800px]  mx-[50px] mt-[-50px] bg-[#d2a679]  ">
                         
-                        <div className="flex hidden md:block flex-col"><div className='text-4xl text-white font-bold mx-[16px] p-3 '>18</div>
-                                   <div className='text-2xl text-white mx-[25px] '>NOV</div>
+                        <div className="flex hidden md:block flex-col"><div className='text-4xl text-white font-serif  font-bold mx-[16px] p-3 '>18</div>
+                                   <div className='text-2xl font-serif  text-white mx-[25px] '>NOV</div>
                                    </div>
         </div>
-        <div className="flex flex-col  absolute left-[1] p-15 ">
-             <div className='text-lg text-gray-600  mt-2 mx-2 p-2'> 🗓 13 August 2024 👾 Admin </div>
+        <div className="flex flex-col  absolute md:left-[1]  md:p-15 p-0 ">
+             <div className='md:text-lg text-sm text-gray-600 font-serif  dark:text-white   md:mt-2 mt-0 mx-2 md:p-2 p-0'> 🗓 13 August 2024 👾 Admin </div>
         
-            <div className='text-3xl text-black font-marcallus font-semibold p-2  '>This prefabricated passive house highly</div>
-              <div className='text-lg text-gray-600  mt-2 mx-2 p-2'> Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now
+            <div className='md:text-3xl text-1xl text-black font-marcallus font-semibold font-serif dark:text-yellow-600  md:p-2 p-0  '>This prefabricated passive house highly</div>
+              <div className='md:text-lg text-xs text-gray-600  md:mt-2 mt-0 mx-2 font-serif dark:text-white   md:p-2 p-0'> Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now
 
 </div>
-            <div className='text-2xl text-amber-700  mt-2 p-1'>READ MORE &#62; </div>
+            <button className=" dark:text-black justify-center items-center md:w-[250px] md:mt-[10px] mt-0 md:w-[200px] w-[130px] rounded-lg md:h-[60px] h-[25px] bg-[#f5c86b] font-bold"
+   onClick={(event)=>{
+    router.push(`/about`);
+   }}>READ MORE &#62;</button>
         
           
        </div>
         </div>
         </div>
-        <div className='p-10'></div>
-         <div className="flex flex-col mx-10">
+        <div className='flex flex-col mx-10 p-10'></div>
+         <div className=" flex flex-col mx-10">
             
             <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F3-full.jpg&w=3840&q=75" className='md:h-[700px] h-[250px] md:w-[1200px] w-[300px] rounded-[20px]'/>
-         <div className=" md:h-[400px] md:w-[1060px] relative flex flex-row px-2 mx-[50px] mt-[-40px]    bg-white  ">
-                      <div className=" md:h-[130px] md:w-[130px] relative flex flex-row px-2 ml-[800px] mx-[50px] mt-[-50px] bg-[#d2a679]  ">
+         <div className="  md:h-[400px] h-[190px] md:w-[1060px] w-[275px] relative flex flex-row px-2  md:mt-[-40px] mt-[-50px] dark:bg-black border-1 border-gray-200  md:mx-[50px] mx-[10px]  bg-white ">
+                      <div className=" md:h-[130px]  md:w-[130px] hidden md:block relative flex flex-row px-2 ml-[800px] mx-[50px] mt-[-50px] bg-[#d2a679]  ">
                         
-                        <div className="flex flex-col"><div className='text-4xl text-white font-bold mx-[16px] p-3 '>18</div>
-                                   <div className='text-2xl text-white mx-[25px] '>NOV</div>
+                        <div className="flex hidden md:block flex-col"><div className='text-4xl hidden md:block text-white font-bold mx-[16px] font-serif  p-3 '>28</div>
+                                   <div className='text-2xl text-white hidden md:block mx-[25px] font-serif  '>DEC</div>
                                    </div>
         </div>
-        <div className="flex flex-col  absolute left-[1] p-15 ">
-             <div className='text-lg text-gray-600  mt-2 mx-2 p-2'> 🗓 14 August 2024 👾 John Baus </div>
+             <div className="flex flex-col  absolute md:left-[1]  md:p-15 p-0 ">
+             <div className='md:text-lg text-sm text-gray-600 font-serif dark:text-white    md:mt-2 mt-0 mx-2 md:p-2 p-0'> 🗓 14 August 2024 👾 John Baus </div>
         
-            <div className='text-3xl text-black font-marcallus font-semibold p-2  '>Overcame breeding point concerns has.</div>
-              <div className='text-lg text-gray-600  mt-2 mx-2 p-2'> Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now
+            <div className='md:text-3xl text-1xl text-black font-marcallus font-semibold font-serif dark:text-yellow-600  md:p-2 p-0  '>Overcame breeding point concerns has.</div>
+              <div className='md:text-lg text-xs text-gray-600  md:mt-2 mt-0 mx-2 font-serif dark:text-white    md:p-2 p-0'> Bndulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now
 
 </div>
-            <div className='text-2xl text-amber-700  mt-2 p-1'>READ MORE &#62; </div>
+                 <button className=" dark:text-black justify-center items-center md:w-[250px] md:mt-[10px] mt-0 md:w-[200px] w-[130px] rounded-lg md:h-[60px] h-[25px] bg-[#f5c86b] font-bold"
+   onClick={(event)=>{
+    router.push(`/about`);
+   }}>READ MORE &#62;</button>
         
           
        </div>
@@ -131,16 +142,17 @@ export default function Blog() {
         </div>
 </div>
         <div className="p-10"></div>
+        <Offer/>
     <div className='flex flex-row border-2 h-[100px] p-4 w-[450px]'>
-<div className='flex flex-col p-5 items-center justify-center w-[200px] h-[70px]  border-black border-1 dark:border-white hover:text-white hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-2xl rounded-lg text-yellow-900 '>  1
-    </div><div className='flex flex-row p-5 items-center justify-center w-[150px] h-[70px] rounded-md border-1 dark:border-white  hover:text-white   hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-yellow-900 text-2xl'> 2
-    </div><div className='flex flex-row p-5 items-center justify-center w-[150px] h-[70px] rounded-md border-1 dark:border-white  hover:text-white hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-yellow-900 text-2xl'> 3
-    </div><div className='flex flex-col p-5 items-center justify-center w-[150px] h-[70px] rounded-md  border-1 dark:border-white hover:text-white hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-2xl text-yellow-900 '> 4
-    </div><div className='flex flex-col p-5 items-center justify-center w-[150px] h-[70px] rounded-md  border-1 dark:border-white hover:text-white hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-2xl text-yellow-900 '> &#62;
+<div className='flex flex-col p-5 items-center justify-center w-[200px]  hidden md:block h-[70px]  border-black border-1 dark:border-white hover:text-white hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-2xl rounded-lg text-yellow-900 '>  1
+    </div><div className='flex flex-row p-5 items-center justify-center  hidden md:block w-[150px] h-[70px] rounded-md border-1 dark:border-white  hover:text-white   hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-yellow-900 text-2xl'> 2
+    </div><div className='flex flex-row p-5 items-center justify-center  hidden md:block w-[150px] h-[70px] rounded-md border-1 dark:border-white  hover:text-white hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-yellow-900 text-2xl'> 3
+    </div><div className='flex flex-col p-5 items-center justify-center  hidden md:block w-[150px] h-[70px] rounded-md  border-1 dark:border-white hover:text-white hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-2xl text-yellow-900 '> 4
+    </div><div className='flex flex-col p-5 items-center justify-center  hidden md:block w-[150px] h-[70px] rounded-md  border-1 dark:border-white hover:text-white hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-2xl text-yellow-900 '> &#62;
     </div>
         </div>
         </div>
-      <div className="p-20"></div>
+      <div className="md:p-20 p-0"></div>
         <Footer />
     </div>
   );
