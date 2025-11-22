@@ -48,6 +48,8 @@ const router=useRouter();
     alt="Background"
     className="md:w-full md:h-full h-[400px] object-cover  rounded-[10px]"
   />
+    <div className="absolute top-0 bg-black/40 left-0 w-full h-full  rounded-[80px]">
+         
   
   <div className="absolute md:top-10 top-1  left-0 md:w-full md:h-full rounded-[80px] ">
 
@@ -104,6 +106,7 @@ const router=useRouter();
 </div>
   </div>
   </div>
+  </div>
       <div className='p-5'></div>
       
 <div className="flex md:flex-row flex-col md-[10] h-[60%] w-full justify-around items-start mr-[10px]">
@@ -154,7 +157,7 @@ const router=useRouter();
         <option value="4">4 Person</option>
       </select >
  <div className='p-2'></div>
-   <button className=" text-white border-1 border-yellow-400 w-[51%] h-[50px] bg-yellow-900 rounded-lg font-bold"
+   <button className=" text-white border-1 border-yellow-400 w-[51%] h-[50px] bg-[#B8860B] rounded-lg font-bold"
    onClick={(event)=>{
       alert("You Record has been Saved Thanks for Your Valuable Time!");
         console.log("Book A Table");

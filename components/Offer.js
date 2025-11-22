@@ -1,6 +1,9 @@
+"use client";
+ import {useRouter} from "next/navigation";
 export default function Offer() {
+const router = useRouter(); 
   return (
-<div className=" flex flex-col md:w-[1250px] md:flex-row justify-center md:h-[600px]  rounded-[20px] md:items-center bg-[#f5c86b] p-1 border-dashed border-4 border-yellow-300 md:mx-36">
+<div className=" flex flex-col md:w-[1250px] md:flex-row justify-center md:h-[600px]  rounded-[20px] md:items-center bg-[#f5c86b] p-1 border-dashed border-4 border-yellow-300 md:mx-30">
    
       <div className="relative flex md:justify-center md:items-center md:mb-0 mr-12  md:p-5">
         <div className="flex flex-col">
@@ -40,7 +43,8 @@ export default function Offer() {
           keeps at no meant stuff. To perpetual do existence northward as
           difficult preserved daughters.
         </p>
-        <button className="bg-amber-700 text-white font-semibold px-6 py-3 rounded-full hover:bg-amber-800 transition">
+        <button className="bg-amber-700 text-white font-semibold px-6 py-3 rounded-full hover:bg-amber-800 transition"    onClick={(event)=>{
+    router.push(`/menu`);}}>
           Order Today
         </button>
       </div>     

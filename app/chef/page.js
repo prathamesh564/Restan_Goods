@@ -71,7 +71,7 @@
             <div className="text-black font-serif md:text-5xl text-2xl p-4 font-bold mb-6">
               Meet Our Special Chefs
             </div>
-            <div className="flex md:flex-row flex-col mt-10 justify items-center md:gap-30 gap-10 md:ml-30 ml-0">
+            <div className="flex md:flex-row flex-col mt-10 justify items-center md:gap-30 gap-10 md:ml-25 ml-0">
               <div className="flex flex-col">
                 <div>
                   <img
@@ -79,7 +79,7 @@
                     className="md:w-[350px] w-[350px]  h-auto   rounded-[100%] p-4 border border-gray-900"
                   />
                 </div>
-                <div className="bg-yellow-900 md:w-[350px] w-[320px] h-18 mt-[-80px]">
+                <div className="bg-[#B8860B] md:w-[350px] w-[320px] h-18 mt-[-80px]">
                   <div className="text-center text-white text-md font-bold  p-2">
                     Alexander Petllo
                     <br />
@@ -94,7 +94,7 @@
                     className="w-[350px]  h-auto   rounded-[100%] p-4 border border-gray-900"
                   />
                 </div>
-                <div className="bg-yellow-900 md:w-[350px] w-[320px]   h-18 mt-[-80px] ">
+                <div className="bg-[#B8860B] md:w-[350px] w-[320px]   h-18 mt-[-80px] ">
                   <div className="text-center text-white text-md font-bold p-2">
                     Mendia Juxef
                     <br />
@@ -109,7 +109,7 @@
                     className="w-[350px] h-auto   rounded-[100%] p-4 border border-gray-900 "
                   />
                 </div>
-                <div className="bg-yellow-900 md:w-[350px] w-[320px] h-18 mt-[-80px]">
+                <div className="bg-[#B8860B] md:w-[350px] w-[320px] h-18 mt-[-80px]">
                   <div className="text-center text-white text-md font-bold  p-2">
                     Petro William
                     <br />
@@ -118,7 +118,7 @@
                 </div>
               </div>
             </div>
-            <div className="flex md:flex-row flex-col mt-10 justify items-center  md:gap-30 gap-10 md:ml-30 ml-0">
+            <div className="flex md:flex-row flex-col mt-10 justify items-center  md:gap-30 gap-10 md:ml-25 ml-0">
               <div className="flex flex-col">
                 <div>
                   <img
@@ -126,7 +126,7 @@
                     className="md:w-[350px] w-[330px] h-auto   rounded-[100%] p-4 border border-gray-900"
                   />
                 </div>
-                <div className="bg-yellow-900 md:w-[350px] w-[320px] md:w-[350px] h-18 mt-[-80px]">
+                <div className="bg-[#B8860B] md:w-[350px] w-[320px] md:w-[350px] h-18 mt-[-80px]">
                   <div className="text-center text-white text-md font-bold  p-2">
                     Alexander Petllo
                     <br />
@@ -141,7 +141,7 @@
                     className="md:w-[350px] w-[320px] h-auto   rounded-[100%] p-4 border border-gray-900"
                   />
                 </div>
-                <div className="bg-yellow-900 md:w-[350px] w-[320px] h-18 mt-[-80px] ">
+                <div className="bg-[#B8860B] md:w-[350px] w-[320px] h-18 mt-[-80px] ">
                   <div className="text-center text-white text-md font-bold p-2">
                     Mendia Juxef
                     <br />
@@ -156,7 +156,7 @@
                     className="w-[350px] h-auto   rounded-[100%] p-4 border border-gray-900 "
                   />
                 </div>
-                <div className="bg-yellow-900 md:w-[350px] w-[320px] h-18 mt-[-80px]">
+                <div className="bg-[#B8860B] md:w-[350px] w-[320px] h-18 mt-[-80px]">
                   <div className="text-center text-white text-md font-bold  p-2">
                     Petro William
                     <br />

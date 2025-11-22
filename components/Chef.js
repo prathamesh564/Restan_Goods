@@ -21,7 +21,7 @@
                     className="md:w-[350px] h-auto   rounded-[100%] p-4 border border-gray-900"
                   />
                 </div>
-                <div className="bg-yellow-900 md:w-[310px]  md:h-18 md:mt-[-80px]  md:mx-[20px]">
+                <div className=" bg-[#B8860B] md:w-[310px] h-18 mx-[20px] mt-[-80px]">
                   <div className="text-center text-white font-serif text-md font-bold   p-2">
                     Alexander Petllo
                     <br />
@@ -36,7 +36,7 @@
                     className="w-[350px] h-auto   rounded-[100%] p-4 border border-gray-900"
                   />
                 </div>
-                <div className="bg-yellow-900 md:w-[310px] h-18 mx-[20px] mt-[-80px] ">
+                <div className=" bg-[#B8860B] md:w-[310px] h-18 mx-[20px] mt-[-80px] ">
                   <div className="text-center font-serif text-white text-md font-bold p-2">
                     Mendia Juxef
                     <br />
@@ -51,7 +51,7 @@
                     className="w-[350px] h-auto   rounded-[100%] p-4 border border-gray-900 "
                   />
                 </div>
-                <div className="bg-yellow-900 md:w-[310px] mx-[20px] h-18 mt-[-80px]">
+                <div className=" bg-[#B8860B] md:w-[310px] mx-[20px] h-18 mt-[-80px]">
                   <div className="text-center  font-serif text-white text-md font-bold  p-2">
                     Petro William
                     <br />
