@@ -342,7 +342,7 @@ const router=useRouter();
    onClick={(event)=>{
      scrollTo({ top: 0, behavior: 'smooth' });
    }}><img src="https://wallpapercave.com/wp/wp11853200.jpg" className=" items-center justify-center w-[80px] h-[80px] rounded-full"/></button>
-<div className='md:p-20 p-5'></div>
+<div className='md:p-20 p-6'></div>
 <Footer/>
 </div>
   )
