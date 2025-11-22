@@ -63,7 +63,7 @@ export default function Blog() {
         <div className="flex flex-col mx-10">
             <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F1.jpg&w=1920&q=75" className='md:h-[700px] h-[250px] md:w-[1200px] w-[300px] rounded-[20px]'/>
          <div className="  md:h-[400px] h-[190px] md:w-[1060px] w-[275px] relative flex flex-row px-2  md:mt-[-40px] mt-[-50px]   md:mx-[50px] mx-[10px] dark:bg-black border-1 border-gray-200 bg-white ">
-                      <div className=" md:h-[130px] md:w-[130px] relative flex flex-row px-2 ml-[800px] hidden md:block mx-[50px] mt-[-50px] bg-[#d2a679]  ">       
+                      <div className=" md:h-[130px] md:w-[130px] relative flex flex-row px-2 ml-[800px] hidden md:block mx-[50px] mt-[-50px] bg-[#B8860B]   ">       
                          <div className="flex flex-col">
                         <div className='md:text-5xl font-serif text-white font-bold mx-[16px] p-3 '>24</div>
                         <div className='md:text-3xl font-serif text-white mx-[25px] '>NOV</div>
@@ -91,7 +91,7 @@ export default function Blog() {
             
             <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F2.jpg&w=1920&q=75" className='md:h-[700px] h-[250px] md:w-[1200px] w-[300px] rounded-[20px]'/>
          <div className="  md:h-[400px] h-[190px] md:w-[1060px] w-[275px] relative flex flex-row px-2  md:mt-[-40px] mt-[-50px]   md:mx-[50px] mx-[10px] dark:bg-black border-1 border-gray-200  bg-white  ">
-                      <div className=" md:h-[130px] md:w-[130px] relative flex hidden md:block flex-row px-2 md:ml-[800px]  mx-[50px] mt-[-50px] bg-[#d2a679]  ">
+                      <div className=" md:h-[130px] md:w-[130px] relative flex hidden md:block flex-row px-2 md:ml-[800px]  mx-[50px] mt-[-50px] bg-[#B8860B]   ">
                         
                         <div className="flex hidden md:block flex-col"><div className='text-4xl text-white font-serif  font-bold mx-[16px] p-3 '>18</div>
                                    <div className='text-2xl font-serif  text-white mx-[25px] '>NOV</div>
@@ -118,7 +118,7 @@ export default function Blog() {
             
             <img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fblog%2F3-full.jpg&w=3840&q=75" className='md:h-[700px] h-[250px] md:w-[1200px] w-[300px] rounded-[20px]'/>
          <div className="  md:h-[400px] h-[190px] md:w-[1060px] w-[275px] relative flex flex-row px-2  md:mt-[-40px] mt-[-50px] dark:bg-black border-1 border-gray-200  md:mx-[50px] mx-[10px]  bg-white ">
-                      <div className=" md:h-[130px]  md:w-[130px] hidden md:block relative flex flex-row px-2 ml-[800px] mx-[50px] mt-[-50px] bg-[#d2a679]  ">
+                      <div className=" md:h-[130px]  md:w-[130px] hidden md:block relative flex flex-row px-2 ml-[800px] mx-[50px] mt-[-50px] bg-[#B8860B]   ">
                         
                         <div className="flex hidden md:block flex-col"><div className='text-4xl hidden md:block text-white font-bold mx-[16px] font-serif  p-3 '>28</div>
                                    <div className='text-2xl text-white hidden md:block mx-[25px] font-serif  '>DEC</div>
@@ -144,11 +144,11 @@ export default function Blog() {
         <div className="p-10"></div>
         <Offer/>
     <div className='flex flex-row border-2 h-[100px] p-4 w-[450px]'>
-<div className='flex flex-col p-5 items-center justify-center w-[200px]  hidden md:block h-[70px]  border-black border-1 dark:border-white hover:text-white hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-2xl rounded-lg text-yellow-900 '>  1
-    </div><div className='flex flex-row p-5 items-center justify-center  hidden md:block w-[150px] h-[70px] rounded-md border-1 dark:border-white  hover:text-white   hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-yellow-900 text-2xl'> 2
-    </div><div className='flex flex-row p-5 items-center justify-center  hidden md:block w-[150px] h-[70px] rounded-md border-1 dark:border-white  hover:text-white hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-yellow-900 text-2xl'> 3
-    </div><div className='flex flex-col p-5 items-center justify-center  hidden md:block w-[150px] h-[70px] rounded-md  border-1 dark:border-white hover:text-white hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-2xl text-yellow-900 '> 4
-    </div><div className='flex flex-col p-5 items-center justify-center  hidden md:block w-[150px] h-[70px] rounded-md  border-1 dark:border-white hover:text-white hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-2xl text-yellow-900 '> &#62;
+<div className='flex flex-col p-5 items-center justify-center w-[200px]  hidden md:block h-[70px]  border-black border-1 dark:border-white hover:text-white hover:bg-[#B8860B]  transition-all mx-[10px] duration-500 text-2xl rounded-lg text-yellow-900 '>  1
+    </div><div className='flex flex-row p-5 items-center justify-center  hidden md:block w-[150px] h-[70px] rounded-md border-1 dark:border-white  hover:text-white   hover:bg-[#B8860B]  transition-all mx-[10px] duration-500 text-yellow-900 text-2xl'> 2
+    </div><div className='flex flex-row p-5 items-center justify-center  hidden md:block w-[150px] h-[70px] rounded-md border-1 dark:border-white  hover:text-white hover:bg-[#B8860B]  transition-all mx-[10px] duration-500 text-yellow-900 text-2xl'> 3
+    </div><div className='flex flex-col p-5 items-center justify-center  hidden md:block w-[150px] h-[70px] rounded-md  border-1 dark:border-white hover:text-white hover:bg-[#B8860B]  transition-all mx-[10px] duration-500 text-2xl text-yellow-900 '> 4
+    </div><div className='flex flex-col p-5 items-center justify-center  hidden md:block w-[150px] h-[70px] rounded-md  border-1 dark:border-white hover:text-white hover:bg-[#B8860B]  transition-all mx-[10px] duration-500 text-2xl text-yellow-900 '> &#62;
     </div>
         </div>
         </div>
