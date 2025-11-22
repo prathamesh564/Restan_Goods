@@ -81,20 +81,21 @@ export default function Blog() {
 </div>
   </div>
   </div>
-      <div className='flex flex-row justify-center items-center font-semibold font-serif md:text-3xl text-yellow-900 p-5'>&#60;-------&#60;&#60; Food Menu &#62;&#62;-------&#62;</div>
+  <div className='flex flex-row justify-center items-center font-semibold font-serif md:text-3xl text-yellow-900 p-5'>&#60;-------&#60;&#60; Food Menu &#62;&#62;-------&#62;</div>
     <div className='flex flex-row justify-center  dark:text-white items-center text-2xl md:text-5xl font-serif p-3'>Our Specials Menu</div>
   
-<div className='flex flex-col p-4 items-center justify-center w-[750px] h-[90px] rounded-md border-1 border-black dark:border-white  mx-[350px] duration-500'>
+<div className='flex flex-col p-5'>
+      </div>
+<div className='flex flex-row p-4 md:items-center md:justify-center md:w-[750px] md:h-[90px] rounded-md border-1 border-black dark:border-white  md:mx-[350px] mx-1 duration-500'>
   
-    <div className='flex flex-row'>
-<div className='flex flex-col p-5 items-center justify-center w-[200px] h-[70px]  border-black dark:border-white hover:text-white hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-2xl rounded-lg text-yellow-900 '>  Main dishes
-    </div><div className='flex flex-row p-5 items-center justify-center w-[150px] h-[70px] rounded-md  dark:border-white  hover:text-white   hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-yellow-900 text-2xl'> Desserts
-    </div><div className='flex flex-row p-5 items-center justify-center w-[150px] h-[70px] rounded-md  dark:border-white  hover:text-white hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-yellow-900 text-2xl'> Sea Food
-    </div><div className='flex flex-col p-5 items-center justify-center w-[150px] h-[70px] rounded-md   dark:border-white hover:text-white hover:bg-[#d2a679] transition-all mx-[10px] duration-500 text-2xl text-yellow-900 '> Beverages
+    <div className='flex md:flex-row'>
+<div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[200px] w-20 md:h-[70px] font-serif border-black hidden md:block dark:border-white hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] mx-[-50] duration-500 text-2xl rounded-lg  dark:text-white text-yellow-900  '>  Main dishes
+    </div><div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[150px] w-20 md:h-[70px] font-serif rounded-md  dark:border-white  hover:text-white   hover:bg-[#d2a679] transition-all md:mx-[10px] mx-1 duration-500   dark:text-white text-yellow-900 text-2xl'> Desserts
+    </div><div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[150px] w-20 font-serif md:h-[70px] rounded-md  dark:border-white  hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] mx-10 dark:text-white duration-500 text-yellow-900 text-2xl'> Sea Food
+    </div><div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[150px] w-20 font-serif md:h-[70px] rounded-md   dark:border-white hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] mx-1 dark:text-white duration-500 text-2xl hidden md:block text-yellow-900 '> Beverages
     </div>
     </div>
     </div>
-
 <div className="md:max-w-[500px] mx-auto text-center rounded-[10px]">
 
 
