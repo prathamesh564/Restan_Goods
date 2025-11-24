@@ -2,6 +2,9 @@
 export default function Blog(){
     return(
       <div className='flex md:flex-row flex-col  md:justify-left'>
+  <div className='flex hidden md:block flex-col  md:justify-left'>
+         <div className="text-9xl ml-[250px] font-serif text-gray-200">Restan</div>
+       
 <div className="w-full md:w-[860px] w-[full]  md:h-[506px] h-[450px] aspect-video md:mx-[30px] mx-[10px]">
   <iframe
     className="w-full h-full"
@@ -14,8 +17,8 @@ export default function Blog(){
   ></iframe>
 </div>
  
-
-    <div className=" absolute top-[-100px] md:mx-[-50px] md:h-[520px] md:w-[700px]  relative flex flex-col md:px-6  dark:bg-gray-600 bg-white  ">
+</div>
+    <div className=" absolute top-[-100px] md:mx-[-60px] md:h-[520px] md:w-[700px]  relative flex flex-col md:px-6  dark:bg-gray-600 bg-white  ">
       
   <div className="flex flex-col">
     <div className="font-bold font-serif dark:text-white text-2xl md:text-4xl p-10">  Opening Hours</div>

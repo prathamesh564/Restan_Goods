@@ -51,9 +51,9 @@
           
         <div className="flex flex-col items-left items-center ">
          
-          <div className="text-white md:text-5xl text-2xl md:mt-1 mt-50 md:ml-0 ml-12 font-serif font-sans">Restaurant Chefs</div>
+          <div className="text-white md:text-5xl text-3xl md:mt-1 mt-50 md:ml-0 ml-15 font-serif font-sans">Restaurant Chefs</div>
           
-          <div className="text-white md:text-2xl text-sm p-5 md:p-[50]  md:ml-0 ml-12 items-center font-serif font-sans"> 🏡 Home &#62; Chefs</div>
+          <div className="text-white md:text-2xl text-sm p-5 md:p-[50]  md:ml-0 ml-15 items-center font-serif font-sans"> 🏡 Home &#62; Chefs</div>
           </div>
              <div className="flex flex-col items-center p-5"></div>
       

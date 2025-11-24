@@ -86,12 +86,13 @@ export default function Blog() {
   
 <div className='flex flex-col p-5'>
       </div>
-<div className='flex flex-row p-4 md:items-center md:justify-center md:w-[750px] md:h-[90px] rounded-md border-1 border-black dark:border-white  md:mx-[350px] mx-1 duration-500'>
+
+<div className='flex flex-row p-4 md:items-center md:justify-center md:w-[750px] w-[300px] md:h-[90px] h-[80px] rounded-md border-1 border-black dark:border-white  md:mx-[350px] mx-[30px] mx-1 duration-500'>
   
     <div className='flex md:flex-row'>
-<div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[200px] w-20 md:h-[70px] font-serif border-black hidden md:block dark:border-white hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] mx-[-50] duration-500 text-2xl rounded-lg  dark:text-white text-yellow-900  '>  Main dishes
-    </div><div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[150px] w-20 md:h-[70px] font-serif rounded-md  dark:border-white  hover:text-white   hover:bg-[#d2a679] transition-all md:mx-[10px] mx-1 duration-500   dark:text-white text-yellow-900 text-2xl'> Desserts
-    </div><div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[150px] w-20 font-serif md:h-[70px] rounded-md  dark:border-white  hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] mx-10 dark:text-white duration-500 text-yellow-900 text-2xl'> Sea Food
+<div className='flex md:flex-row md:p-5 p-0 md:items-center md:justify-center md:w-[200px] w-[100px] w-20 md:h-[70px] font-serif border-black dark:border-white hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] mx-1 duration-500 md:text-2xl text-1xl rounded-lg  dark:text-white text-yellow-900  '>  Main dishes
+    </div><div className='flex md:flex-row md:p-5 p-0 md:items-center md:justify-center md:w-[150px] w-20 md:h-[70px] font-serif rounded-md  dark:border-white  hover:text-white   hover:bg-[#d2a679] transition-all md:mx-[10px] mx-1 duration-500   dark:text-white text-yellow-900  md:text-2xl text-1xl'> Desserts
+    </div><div className='flex md:flex-row md:p-5 p-0 md:items-center md:justify-center md:w-[150px] w-20 font-serif md:h-[70px] rounded-md  dark:border-white  hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] mx-1 dark:text-white duration-500 text-yellow-900  md:text-2xl text-1xl'> Sea Food
     </div><div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[150px] w-20 font-serif md:h-[70px] rounded-md   dark:border-white hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] mx-1 dark:text-white duration-500 text-2xl hidden md:block text-yellow-900 '> Beverages
     </div>
     </div>

@@ -70,9 +70,9 @@ useEffect(() => {
 
      <div className="absolute inset-0 md:rounded-[80px] flex md:items-center p-5 md:justify-center">
   <div className="flex flex-col items-center ">
-    <div className="text-white md:text-5xl text-2xl md:mt-1 mt-50 md:ml-0 ml-12 font-serif font-sans">Cart Page</div>
+    <div className="text-white md:text-5xl text-3xl md:mt-1 mt-50 md:ml-0 ml-15 font-serif font-sans">Cart Page</div>
     
-    <div className="text-white md:text-2xl p-6 font-serif md:ml-0 ml-10  font-sans"> 🏡 Home &#62; Cart</div>
+    <div className="text-white md:text-2xl p-6 font-serif md:ml-0 ml-15  font-sans"> 🏡 Home &#62; Cart</div>
     </div>
        <div className="flex flex-col items-center p-5"></div>
 

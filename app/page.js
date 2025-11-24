@@ -81,9 +81,9 @@ const router=useRouter();
      <div className="absolute inset-0 md:rounded-[80px] flex md:items-center p-5 md:justify-center">
    <div className="flex flex-col justify-center p-10">
       <div className="flex flex-col justify-center p-10"></div>
-    <div className="text-white md:text-6xl text-2xl font-serif ">Best Restaurant</div>
+    <div className="text-white md:text-6xl text-3xl font-serif md:mx-0 mx-5 ">Best Restaurant</div>
        <div className="flex flex-col justify-center p-5"></div>
-    <div className='flex flex-col items-center justify-center md:w-[200px] md:h-[200px] mx-[90px] rounded-full md:border-2  border-amber-100 dark:border-amber-100 hover:text-white p-5'>
+    <div className='flex flex-col items-center justify-center md:w-[200px] md:h-[200px] mx-[110px] rounded-full md:border-2  border-amber-100 dark:border-amber-100 hover:text-white p-5'>
   
     <div className="hidden md:block curve-text   ">
      <svg width="200" height="200" viewBox="0 0 200 200">
@@ -115,12 +115,12 @@ const router=useRouter();
        
            <div className="flex flex-column"></div>
            
-      <div className="min-h-[500px] md:h-[600px] md:w-[850px] md:mx-[100px] relative flex flex-col px-2  mt-[-30px] items-center  dark:bg-black border-1 dark:border-gray-500  bg-gray-200 rounded-[50px] ">
+      <div className="min-h-[500px] md:h-[600px] md:w-[850px]  md:mx-[100px] mx-[10px] relative flex flex-col px-2  mt-[-140px] items-center  dark:bg-black border-1 dark:border-gray-500  bg-gray-200 rounded-[50px] ">
         
      <div className="flex md:flex-row w-{1/2}">
          <img src="https://play-lh.googleusercontent.com/8wLUlZ4RTW9MhdU5YrGKTilM-jPTC2Yc1g9hpbrP6dgv_EW1p3PpexuIIw8hTuVfTID0" className='h-[70px] md:w-[70px]  mx-5  p-[-20] rounded-full  '/>
       
-        <div className="dark:text-white text-3xl  font-serif font-semibold mx-[10px] p-5">Book A Table </div>
+        <div className="dark:text-white md:text-3xl text-2xl  font-serif font-semibold mx-[10px] p-5">Book A Table </div>
      </div>
       <input placeholder="Phone" 
   required={true} 
@@ -246,12 +246,12 @@ const router=useRouter();
   
 <div className='flex flex-col p-5'>
       </div>
-<div className='flex flex-row p-4 md:items-center md:justify-center md:w-[750px] md:h-[90px] rounded-md border-1 border-black dark:border-white  md:mx-[350px] mx-1 duration-500'>
+<div className='flex flex-row p-4 md:items-center md:justify-center md:w-[750px] w-[300px] md:h-[90px] h-[80px] rounded-md border-1 border-black dark:border-white  md:mx-[350px] mx-[30px] mx-1 duration-500'>
   
     <div className='flex md:flex-row'>
-<div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[200px] w-20 md:h-[70px] font-serif border-black hidden md:block dark:border-white hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] mx-[-50] duration-500 text-2xl rounded-lg  dark:text-white text-yellow-900  '>  Main dishes
-    </div><div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[150px] w-20 md:h-[70px] font-serif rounded-md  dark:border-white  hover:text-white   hover:bg-[#d2a679] transition-all md:mx-[10px] mx-1 duration-500   dark:text-white text-yellow-900 text-2xl'> Desserts
-    </div><div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[150px] w-20 font-serif md:h-[70px] rounded-md  dark:border-white  hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] mx-10 dark:text-white duration-500 text-yellow-900 text-2xl'> Sea Food
+<div className='flex md:flex-row md:p-5 p-0 md:items-center md:justify-center md:w-[200px] w-[100px] w-20 md:h-[70px] font-serif border-black dark:border-white hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] mx-1 duration-500 md:text-2xl text-1xl rounded-lg  dark:text-white text-yellow-900  '>  Main dishes
+    </div><div className='flex md:flex-row md:p-5 p-0 md:items-center md:justify-center md:w-[150px] w-20 md:h-[70px] font-serif rounded-md  dark:border-white  hover:text-white   hover:bg-[#d2a679] transition-all md:mx-[10px] mx-1 duration-500   dark:text-white text-yellow-900  md:text-2xl text-1xl'> Desserts
+    </div><div className='flex md:flex-row md:p-5 p-0 md:items-center md:justify-center md:w-[150px] w-20 font-serif md:h-[70px] rounded-md  dark:border-white  hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] mx-1 dark:text-white duration-500 text-yellow-900  md:text-2xl text-1xl'> Sea Food
     </div><div className='flex md:flex-row p-5 md:items-center md:justify-center md:w-[150px] w-20 font-serif md:h-[70px] rounded-md   dark:border-white hover:text-white hover:bg-[#d2a679] transition-all md:mx-[10px] mx-1 dark:text-white duration-500 text-2xl hidden md:block text-yellow-900 '> Beverages
     </div>
     </div>
@@ -332,7 +332,7 @@ const router=useRouter();
       <div className="p-20">  </div>
     <Hour/>
  
-<img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshape%2F4.png&w=3840&q=75" className=" hidden md:block absolute md:ml-[1050px]  md:w-[300px] md:h-[200px] rounded-[50%] md:mt-[-170px]  "/>
+<img src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshape%2F4.png&w=3840&q=75" className=" hidden md:block absolute md:ml-[1050px]  md:w-[420px] md:h-[300px] rounded-[50%] md:mt-[-270px]  "/>
 
  
   <Chef/>
