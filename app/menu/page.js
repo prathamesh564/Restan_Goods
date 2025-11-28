@@ -3,6 +3,7 @@ import { useRouter } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Offer from '@/components/Offer';
+import Book from '@/components/Book';
 import React from 'react';
 
 export default function Blog() {
@@ -81,6 +82,7 @@ export default function Blog() {
 </div>
   </div>
   </div>
+
   <div className='flex flex-row justify-center items-center font-semibold font-serif md:text-3xl text-yellow-900 p-5'>&#60;-------&#60;&#60; Food Menu &#62;&#62;-------&#62;</div>
     <div className='flex flex-row justify-center  dark:text-white items-center text-2xl md:text-5xl font-serif p-3'>Our Specials Menu</div>
   
@@ -131,9 +133,91 @@ export default function Blog() {
  
 </div>
    </div>
-<Offer/>
-<div className="p-20"></div>
-<Footer />
+   <div className="p-30"></div>
+<div className="relative min-h-[25%] flex md:flex-row flex-col md:w-full">
+  <img
+    src="https://restan-nextjs.vercel.app/assets/img/banner/9.jpg"
+    className="absolute inset-0 w-full md:h-[600px] h-[900px]"
+    alt=""
+  />
+
+  <div className="absolute inset-0 bg-black/40"></div>
+
+ 
+
+  <div className="relative z-10 md:max-w-[40%] w-full md:text-center md:mt-20 mt-2 text-left p-10">
+    <div className="md:text-7xl text-2xl font-serif font-semibold text-white md:mb-15 mb-6">
+      30 Minutes Delivery!
+    </div>
+
+    <div className="text-white md:mb-6 leading-relaxed">
+    A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center of Florence. The only bar inspired by the 1960s, it will give you a experience that you’ll have a hard time forgetting.
+
+
+    </div>
+
+    <div className="flex md:flex-row items-center p-5">
+    
+      <button className="bg-[#B8860B] text-white hover:text-black font-semibold mx-[30px] px-6 py-3 rounded-lg hover:bg-white transition">
+        Order Now
+      </button>
+    </div>
   </div>
+ <div className="relative z-10 flex flex-row md:justify-center  items-center p-5 md:mr-5">
+    <img
+      src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fillustration%2F11.png&w=1920&q=75"
+      alt="Main Dish"
+      className="md:w-120 md:h-130  md:shadow-2xl"
+    />
+  </div>
+</div>
+<div className="p-30"></div>
+<Offer/>
+<div className="p-30"></div>
+<div className="relative min-h-[25%] flex md:flex-row flex-col md:w-full">
+  <img
+    src="https://restan-nextjs.vercel.app/assets/img/banner/2.jpg"
+    className="absolute inset-0 w-full md:h-[600px] h-[400px] "
+    alt=""
+  />
+
+  <div className="absolute inset-0 bg-black/40"></div>
+
+ 
+
+  <div className="relative z-10 md:max-w-[40%] w-full md:text-center text-left p-5">
+     <div className="md:text-2xl md:text-1xl 
+      font-serif font-semibold text-white mx-0 md:mb-15 mb-6">
+ Reservation &#62;&#62;------&#62;
+    </div>
+    <div className="md:text-5xl md:text-2xl text-1xl font-serif font-semibold text-white md:mb-15 mb-6">
+Reservation Your Favorite Private Table
+    </div>
+
+    <div className="text-white md:mb-6 leading-relaxed">
+    A relaxing and pleasant atmosphere, good jazz, dinner, and cocktails. The Patio Time Bar opens in the center of Florence. The only bar inspired by the 1960s, it will give you a experience that you’ll have a hard time forgetting.</div>
+
+    <div className="flex md:flex-row items-center p-5">
+  
+        <div className="text-white md:mb-6 md:text-2xl text-sm font-serif ml-10 leading-relaxed">
+          Lunch Menu
+30+ items
+   </div>
+
+<div className="text-white md:mb-6 mx-50 md:text-2xl text-sm font-serif leading-relaxed">
+     Dinner Menu<br></br>
+20+ items
+</div>
+    </div>
+  </div>
+ <div className="relative z-10 flex md:flex-row flex-col md:justify-center   items-center p-10 md:mr-15 mr-0">
+<Book/>
+  </div>
+</div>
+
+<div className="p-30"></div>
+<Footer />
+
+</div>
   )
   }

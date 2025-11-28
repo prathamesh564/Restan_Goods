@@ -3,7 +3,7 @@ export default function Blog(){
     return(
       <div className='flex md:flex-row flex-col  md:justify-left'>
   <div className='flex hidden md:block flex-col  md:justify-left'>
-         <div className="text-9xl ml-[250px] font-serif text-gray-200">Restan</div>
+         <div className="text-9xl ml-[250px] font-serif dark:text-gray-800 text-gray-200">Restan</div>
        
 <div className="w-full md:w-[860px] w-[full]  md:h-[506px] h-[450px] aspect-video md:mx-[30px] mx-[10px]">
   <iframe
