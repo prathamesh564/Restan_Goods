@@ -70,9 +70,9 @@ export default function Blog() {
     
   <div className="flex flex-col items-left items-center ">
    
-    <div className="text-white md:text-6xl text-2xl font-serif md:mt-1 mt-50">Restaurant Food Menu</div>
+    <div className="text-white md:text-6xl text-2xl font-serif md:mt-1 mt-50 md:ml-0 ml-10">Restaurant Food Menu</div>
     
-    <div className="text-white md:text-2xl text-1xl p-5 md:p-[50] items-center font-serif font-sans"> 🏡 Home &#62; food-menu</div>
+    <div className="text-white md:text-2xl text-1xl p-5 md:p-[50]  md:ml-0 ml-12  items-center font-serif font-sans"> 🏡 Home &#62; food-menu</div>
     </div>
        <div className="flex flex-col items-center p-5"></div>
 
@@ -133,7 +133,7 @@ export default function Blog() {
  
 </div>
    </div>
-   <div className="p-30"></div>
+   <div className="md:p-30 p-10"></div>
 <div className="relative min-h-[25%] flex md:flex-row flex-col md:w-full">
   <img
     src="https://restan-nextjs.vercel.app/assets/img/banner/9.jpg"
@@ -171,9 +171,9 @@ export default function Blog() {
     />
   </div>
 </div>
-<div className="p-30"></div>
+<div className="md:p-30 p-10"></div>
 <Offer/>
-<div className="p-30"></div>
+<div className="md:p-30 p-10"></div>
 <div className="relative min-h-[25%] flex md:flex-row flex-col md:w-full">
   <img
     src="https://restan-nextjs.vercel.app/assets/img/banner/2.jpg"
@@ -215,7 +215,7 @@ Reservation Your Favorite Private Table
   </div>
 </div>
 
-<div className="p-30"></div>
+<div className="md:p-30 p-10"></div>
 <Footer />
 
 </div>
